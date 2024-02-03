@@ -1,5 +1,6 @@
 * {
     font-family: Calibri, sans-serif;
+
 }
 
 .navbar {
@@ -36,7 +37,7 @@
     margin-right: 25px;
 }
 
-.menu button{
+.menu button {
     border-radius: 10px;
     background-color: lightgray;
     margin-left: 15px;
@@ -48,4 +49,96 @@
 
 .logo img {
     height: 50px;
+}
+
+.content {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-movie-film-strip-gray-minimalist-background-image_784563.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.most-watched {
+    padding: 30px 40px;
+}
+
+.movie-previews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #ede4d5;
+    padding: 20px;
+
+}
+
+.movie-previews img {
+    width: 180px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.most-watched h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+}
+
+.find-a-movie {
+    padding: 30px 40px;
+}
+
+.find-a-movie h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+}
+
+.search-form {
+
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #051929;
+    background-color: #ede4d5;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submit-button {
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    width: 250px;
+    height: 50px;
+}
+
+.submit-button button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: #ede4d5;
+    font-weight: bolder;
+}
+
+.input label {
+    margin-bottom: 20px;
 }
