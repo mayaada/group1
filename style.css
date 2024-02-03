@@ -1,0 +1,51 @@
+* {
+    font-family: Calibri, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    background-color: #051929;
+    font-family: Calibri, sans-serif;
+    color: #ede4d5;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 750px;
+}
+
+.user-icon img {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    background-color: #051929;
+}
+
+.sign-in span {
+    margin-right: 25px;
+}
+
+.register {
+    margin-right: 25px;
+}
+
+.menu button{
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left: 15px;
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.logo img {
+    height: 50px;
+}
