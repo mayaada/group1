@@ -263,6 +263,7 @@ form {
     font-weight: normal;
     font-size: 17px;
     padding-right: 150px;
+    border: none;
 
 }
 .sign-in-box h1 {
@@ -279,7 +280,7 @@ form {
     border-radius: 5px;
     background-color: #74BFB5;
     color: #f2f2f2;
-    border-color: #74BFB5;
+    border: none;
     margin-left: 270px;
     padding: 4px 18px 4px 18px;
 }
@@ -291,6 +292,59 @@ form {
 
 }
 /*--------------SIGN IN PAGE-------------*/
+
+/*--------------REGISTER PAGE-------------*/
+.register-container{
+    border: 10px  #ccc;
+    margin: 85px;
+
+}
+
+.register-box{
+     background-color: #cccccc;
+    padding: 20px;
+    border-radius: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.register-box label{
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.register-box button {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #74BFB5;
+    color: #f2f2f2;
+  border: none;
+    margin-left: 270px;
+    padding: 4px 18px 4px 18px;
+}
+
+.register-box input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    border: none;
+}
+
+.register-box h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*--------------REGISTER PAGE-------------*/
+
+
 
 
 
