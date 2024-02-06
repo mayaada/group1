@@ -240,11 +240,11 @@ form {
 /*--------------SIGN IN PAGE-------------*/
 .sign-in-box-container {
     border: 10px  #ccc;
-    margin: 85px;
+    margin: 70px;
 }
 
 .sign-in-box {
-    background-color: #cccccc;
+    background-color: #ede4d5;
     padding: 20px;
     border-radius: 2px;
     max-width: 400px;
@@ -256,6 +256,7 @@ form {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 17px;
+    color: #051929;
 
 }
 .sign-in-box input {
@@ -271,6 +272,7 @@ form {
     font-weight: normal;
     font-size: 20px;
     text-align: center;
+    color: #051929;
 
 }
 .sign-in-box button{
@@ -278,7 +280,7 @@ form {
     font-weight: normal;
     font-size: 15px;
     border-radius: 5px;
-    background-color: #74BFB5;
+    background-color: #051929;
     color: #f2f2f2;
     border: none;
     margin-left: 270px;
@@ -289,24 +291,25 @@ form {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 14px;
+    color: #051929;
 
 }
 /*--------------SIGN IN PAGE-------------*/
 
 /*--------------REGISTER PAGE-------------*/
 .register-container{
-    border: 10px  #ccc;
-    margin: 85px;
+    border: 10px  #ede4d5;
+    margin: 70px;
 
 }
 
 .register-box{
-     background-color: #cccccc;
+     background-color: #ede4d5;
     padding: 20px;
     border-radius: 2px;
     max-width: 400px;
     margin: 0 auto;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .register-box label{
@@ -314,6 +317,11 @@ form {
     font-weight: normal;
     font-size: 17px;
     margin-right: 10px;
+    display: inline-block;
+    width: 70px;
+    color: #051929;
+
+
 }
 
 .register-box button {
@@ -321,7 +329,7 @@ form {
     font-weight: normal;
     font-size: 15px;
     border-radius: 5px;
-    background-color: #74BFB5;
+    background-color: #051929;
     color: #f2f2f2;
   border: none;
     margin-left: 270px;
@@ -333,6 +341,7 @@ form {
     font-weight: normal;
     font-size: 17px;
     border: none;
+    width: 230px;
 }
 
 .register-box h1 {
@@ -340,9 +349,69 @@ form {
     font-weight: normal;
     font-size: 18px;
     text-align: center;
+    color: #051929;
 }
 
 /*--------------REGISTER PAGE-------------*/
+
+/*--------------ContactUs PAGE-------------*/
+.contact-us-container {
+    border: 10px  #ede4d5;
+    margin: 70px;
+}
+
+.contact-us-box {
+    background-color: #ede4d5;
+    padding: 20px;
+    border-radius: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.contact-us-box label {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    display: inline-block;
+    width: 80px;
+    color: #051929;
+
+}
+
+.contact-us-box input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    border: none;
+    width: 230px;
+
+}
+.contact-us-box button {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #051929;
+    color: #f2f2f2;
+    border: none;
+    margin-left: 270px;
+    padding: 4px 18px 4px 18px;
+
+}
+.contact-us-box h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #051929;
+}
+
+.contact-us textarea {
+    border: none;
+}
+/*--------------ContactUs PAGE-------------*/
+
 
 
 
