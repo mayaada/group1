@@ -236,6 +236,80 @@ form {
     height: 100%;
 }
 
+.movie-screening-content {
+        margin: 20px 100px;
+
+
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: Calibri, sans-serif;
+    color: #051929;
+    flex:1;
+    margin-top: 30px;
+}
+
+.movie-info-summary{
+    width: 80%;
+}
+.movie-summary {
+    display: flex;
+    flex-direction: column;
+    background-color: #ede4d5;
+    height: 250px;
+    width: 680px;
+    padding: 30px;
+    margin: 0 40px;
+
+}
+
+.movie-image {
+    height: 250px;
+    width: 180px;
+    background-color: #051929;
+    border-radius: 10px;
+}
+
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    height: 100%;
+}
+
+.general-info span {
+    flex: 1;
+}
+
+.movie-screenings {
+    margin: 30px 0;
+
+}
+
+.screening-row {
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ede4d5;
+}
+
+.screening-row >div:not(:last-child) {
+    margin-right: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-button {
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+}
 
 /*--------------SIGN IN PAGE-------------*/
 .sign-in-box-container {
