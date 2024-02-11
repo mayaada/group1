@@ -193,9 +193,11 @@ footer a {
     margin-left: 15px;
 }
 
+
+/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
 .advanced-search-content {
     padding: 30px 40px;
-        height: calc(100% - 160px);
+    height: calc(100% - 160px);
 }
 
 .advanced-search-content h1 {
@@ -213,6 +215,7 @@ footer a {
     font-size: 20px;
     color: #051929;
     background-color: #ede4d5;
+    margin-top: 15px;
 }
 
 .row {
@@ -236,10 +239,10 @@ form {
     height: 100%;
 }
 
+/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
+
 .movie-screening-content {
-        margin: 20px 100px;
-
-
+    margin: 20px 100px;
 }
 
 .movie-info {
@@ -248,13 +251,14 @@ form {
     align-items: flex-start;
     font-family: Calibri, sans-serif;
     color: #051929;
-    flex:1;
+    flex: 1;
     margin-top: 30px;
 }
 
-.movie-info-summary{
+.movie-info-summary {
     width: 80%;
 }
+
 .movie-summary {
     display: flex;
     flex-direction: column;
@@ -264,6 +268,15 @@ form {
     padding: 30px;
     margin: 0 40px;
 
+}
+
+.movie-summary h1{
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
 }
 
 .movie-image {
@@ -280,6 +293,7 @@ form {
     justify-content: space-around;
     padding: 10px;
     height: 100%;
+    border-left: 3px solid #D89747;
 }
 
 .general-info span {
@@ -288,7 +302,17 @@ form {
 
 .movie-screenings {
     margin: 30px 0;
+    font-family: Calibri, sans-serif;
+    color: #051929;
+}
 
+.movie-screenings h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
 }
 
 .screening-row {
@@ -298,7 +322,7 @@ form {
     background-color: #ede4d5;
 }
 
-.screening-row >div:not(:last-child) {
+.screening-row > div:not(:last-child) {
     margin-right: 30px;
     width: 100px;
     display: flex;
@@ -308,12 +332,21 @@ form {
 .order-button {
     display: flex;
     justify-content: flex-end;
-    flex:1;
+    flex: 1;
+}
+
+.order-button button{
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
 }
 
 /*--------------SIGN IN PAGE-------------*/
 .sign-in-box-container {
-    border: 10px  #ccc;
+    border: 10px #ccc;
     margin: 85px;
 }
 
@@ -326,12 +359,14 @@ form {
     line-height: 30px;
 
 }
+
 .sign-in-box label {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 17px;
 
 }
+
 .sign-in-box input {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -340,6 +375,7 @@ form {
     border: none;
 
 }
+
 .sign-in-box h1 {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -347,7 +383,8 @@ form {
     text-align: center;
 
 }
-.sign-in-box button{
+
+.sign-in-box button {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 15px;
@@ -365,17 +402,18 @@ form {
     font-size: 14px;
 
 }
+
 /*--------------SIGN IN PAGE-------------*/
 
 /*--------------REGISTER PAGE-------------*/
-.register-container{
-    border: 10px  #ccc;
+.register-container {
+    border: 10px #ccc;
     margin: 85px;
 
 }
 
-.register-box{
-     background-color: #cccccc;
+.register-box {
+    background-color: #cccccc;
     padding: 20px;
     border-radius: 2px;
     max-width: 400px;
@@ -383,7 +421,7 @@ form {
     line-height: 50px;
 }
 
-.register-box label{
+.register-box label {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 17px;
@@ -397,7 +435,7 @@ form {
     border-radius: 5px;
     background-color: #74BFB5;
     color: #f2f2f2;
-  border: none;
+    border: none;
     margin-left: 270px;
     padding: 4px 18px 4px 18px;
 }
@@ -418,7 +456,70 @@ form {
 
 /*--------------REGISTER PAGE-------------*/
 
+/*--------------ORDER PAGE----------------*/
+
+.order-content {
+    padding: 30px 70px;
+}
+
+.order-movie-information {
+    background-color: #ede4d5;
+    padding: 30px;
+}
+
+.order-tickets {
+    margin: 30px 0;
+    background-color: #ede4d5;
+    padding: 30px;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px;
+    align-items: center}
+
+.choose-seats-title {
+    width: 80%;
+}
+
+.order-summary-title {
+    width: 60%;
+    margin-left: 200px;
+}
+
+.section-name {
+    padding: 0 10px;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    background-color: #051929;
+    color: #ede4d5;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.step-number {
+    width: 20%;
+    border-right: 1px solid #ede4d5;
+}
+
+.choose-seats-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin: 15px 0;
+}
 
 
-
-
+.summarize-order-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin: 15px 0;
+}
