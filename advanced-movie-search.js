@@ -39,7 +39,5 @@ document.getElementById("movieForm").addEventListener("submit", function (event)
     console.log("Start Time:", startTime);
     console.log("End Time:", endTime);
 
-    window.location.href = "movie-screenings.html";
-
-
+    window.location.href = `movie-screenings.html?date=${date}&movie=${movie}&city=${city}&stateTime=${startTime}&endTime=${endTime}`;
 });

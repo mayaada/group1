@@ -66,11 +66,11 @@
                 <div class="input">
                     <div class="input-block">
                         <label for="date">Choose Date:</label>
-                        <input type="date" id="date" required/>
+                        <input type="date" id="date" name="date" required/>
                     </div>
                     <div class="input-block">
                         <label for="movie">Choose Movie:</label>
-                        <select id="movie" required>
+                        <select id="movie" name="movie" required>
                             <option value="movie name a">movie name a</option>
                             <option value="movie name b">movie name b</option>
                             <option value="movie name c">movie name c</option>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="input-block">
                         <label for="city">Choose a City:</label>
-                        <select id="city" required>
+                        <select id="city" name="city" required>
                             <option value="city a">city a</option>
                             <option value="city b">city b</option>
                             <option value="city c">city c</option>
@@ -93,10 +93,10 @@
                         </select>
                     </div>
                     <div class="input-block">
-                        <label for="endTime">Choose Time Range (Pick start time first):</label>
+                        <label for="startTime">Choose Time Range (Pick start time first):</label>
                         <div>
-                            <input type="time" id="startTime" required/>
-                            <input type="time" id="endTime" required disabled/>
+                            <input type="time" id="startTime" name="startTime" required/>
+                            <input type="time" id="endTime" name="endTime" required disabled/>
                         </div>
                     </div>
                 </div>
