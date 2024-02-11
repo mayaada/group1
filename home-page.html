@@ -37,7 +37,7 @@
 <div class="home-page-content">
     <div class="most-watched">
         <h1>Most Watched Movies</h1>
-        <div class="movie-previews">
+        <div class="movie-previews" id="movie-previews-images">
             <div>
                 <img src="https://netnaija.ng/wp-content/uploads/2023/08/WAPK4B1la0B-1.webp">
             </div>
@@ -61,42 +61,42 @@
 
     <div class="find-a-movie">
         <h1>Find a Movie</h1>
-        <form>
+        <form id="movieForm">
             <div class="search-form">
                 <div class="input">
                     <div class="input-block">
-                        <label>Choose Date:</label>
-                        <input type="date"/>
+                        <label for="date">Choose Date:</label>
+                        <input type="date" id="date" required/>
                     </div>
                     <div class="input-block">
-                        <label>Choose Movie:</label>
-                        <select>
-                            <option>movie name a</option>
-                            <option>movie name b</option>
-                            <option>movie name c</option>
-                            <option>movie name d</option>
-                            <option>movie name e</option>
-                            <option>movie name f</option>
-                            <option>movie name g</option>
+                        <label for="movie">Choose Movie:</label>
+                        <select id="movie" required>
+                            <option value="movie name a">movie name a</option>
+                            <option value="movie name b">movie name b</option>
+                            <option value="movie name c">movie name c</option>
+                            <option value="movie name d">movie name d</option>
+                            <option value="movie name e">movie name e</option>
+                            <option value="movie name f">movie name f</option>
+                            <option value="movie name g">movie name g</option>
                         </select>
                     </div>
                     <div class="input-block">
-                        <label>Choose a City:</label>
-                        <select>
-                            <option>movie name a</option>
-                            <option>movie name b</option>
-                            <option>movie name c</option>
-                            <option>movie name d</option>
-                            <option>movie name e</option>
-                            <option>movie name f</option>
-                            <option>movie name g</option>
+                        <label for="city">Choose a City:</label>
+                        <select id="city" required>
+                            <option value="city a">city a</option>
+                            <option value="city b">city b</option>
+                            <option value="city c">city c</option>
+                            <option value="city d">city d</option>
+                            <option value="city e">city e</option>
+                            <option value="city f">city f</option>
+                            <option value="city g">city g</option>
                         </select>
                     </div>
                     <div class="input-block">
-                        <label>Choose Time Range:</label>
+                        <label for="endTime">Choose Time Range (Pick start time first):</label>
                         <div>
-                            <input type="time"/>
-                            <input type="time"/>
+                            <input type="time" id="startTime" required/>
+                            <input type="time" id="endTime" required disabled/>
                         </div>
                     </div>
                 </div>
@@ -130,5 +130,6 @@
         </div>
     </footer>
 </div>
+<script src="homePage.js"></script>
 </body>
 </html>
