@@ -40,8 +40,9 @@
             <div class="advanced-search-form-rows">
                 <div class="row">
                     <div class="input-block">
-                        <label>Choose City:</label>
-                        <select>
+                        <label for="advanced-search-city">Choose City:</label>
+                        <select id="advanced-search-city">
+                            <option value="">Choose...</option>
                             <option>Tel Aviv</option>
                             <option>Be'er Sheva</option>
                             <option>Ramat Gan</option>
@@ -52,28 +53,30 @@
                         </select>
                     </div>
                     <div class="input-block">
-                        <label>Movie Genre:</label>
-                        <select>
-                            <option>Action</option>
-                            <option>Drama</option>
-                            <option>Thriller</option>
-                            <option>Comedy</option>
-                            <option>Romantic</option>
-                            <option>Doco</option>
+                        <label for="advanced-search-genre">Movie Genre:</label>
+                        <select id="advanced-search-genre">
+                            <option value="">Choose...</option>
+                            <option value="Action">Action</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Romantic">Romantic</option>
+                            <option value="Documentary">Documentary</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-block">
-                        <label>Choose Date:</label>
-                        <input type="date">
+                        <label for="advanced-search-date">Choose Date:</label>
+                        <input type="date" id="advanced-search-date" required>
                     </div>
                     <div class="input-block">
-                        <label>Movie Length:</label>
-                        <select>
-                            <option>Short (Up to 60 minutes)</option>
-                            <option>Medium (1-2 Hours)</option>
-                            <option>Long (Over 2 hours)</option>
+                        <label for="advanced-search-movie-length">Movie Length:</label>
+                        <select id="advanced-search-movie-length">
+                            <option value="">Choose...</option>
+                            <option value="short">Short (Up to 60 minutes)</option>
+                            <option value="medium">Medium (1-2 Hours)</option>
+                            <option value="long">Long (Over 2 hours)</option>
                         </select>
                     </div>
 
@@ -82,17 +85,18 @@
                     <div class="input-block">
                         <label>Choose Time Range:</label>
                         <div>
-                            <input type="time"/>
-                            <input type="time"/>
+                            <input type="time" id="advanced-search-start-time" required/>
+                            <input type="time" id="advanced-search-end-time" required/>
                         </div>
                     </div>
                     <div class="input-block">
-                        <label>Movie Language:</label>
-                        <select>
-                            <option>English</option>
-                            <option>Hebrew</option>
-                            <option>Arabic</option>
-                            <option>Russian</option>
+                        <label for="advanced-search-movie-language">Movie Language:</label>
+                        <select id="advanced-search-movie-language">
+                            <option value="">Choose...</option>
+                            <option value="English">English</option>
+                            <option value="Hebrew">Hebrew</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="Russian">Russian</option>
                         </select>
                     </div>
 
@@ -125,6 +129,7 @@
     </div>
     </div>
 </footer>
+<script src="advanced-movie-search.js"></script>
 
 </body>
 </html>

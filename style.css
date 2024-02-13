@@ -193,9 +193,11 @@ footer a {
     margin-left: 15px;
 }
 
+
+/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
 .advanced-search-content {
     padding: 30px 40px;
-        height: calc(100% - 160px);
+    height: calc(100% - 160px);
 }
 
 .advanced-search-content h1 {
@@ -213,6 +215,7 @@ footer a {
     font-size: 20px;
     color: #051929;
     background-color: #ede4d5;
+    margin-top: 15px;
 }
 
 .row {
@@ -236,6 +239,110 @@ form {
     height: 100%;
 }
 
+/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
+
+.movie-screening-content {
+    margin: 20px 100px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: Calibri, sans-serif;
+    color: #051929;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.movie-info-summary {
+    width: 80%;
+}
+
+.movie-summary {
+    display: flex;
+    flex-direction: column;
+    background-color: #ede4d5;
+    height: 250px;
+    width: 680px;
+    padding: 30px;
+    margin: 0 40px;
+
+}
+
+.movie-summary h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+}
+
+.movie-image {
+    height: 250px;
+    width: 180px;
+    background-color: #051929;
+    border-radius: 10px;
+}
+
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    height: 100%;
+    border-left: 3px solid #D89747;
+}
+
+.general-info span {
+    flex: 1;
+}
+
+.movie-screenings {
+    margin: 30px 0;
+    font-family: Calibri, sans-serif;
+    color: #051929;
+}
+
+.movie-screenings h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+}
+
+.screening-row {
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ede4d5;
+}
+
+.screening-row > div:not(:last-child) {
+    margin-right: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-button {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.order-button button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+}
 
 /*--------------SIGN IN PAGE-------------*/
 .sign-in-box-container {
@@ -413,7 +520,79 @@ form {
 /*--------------ContactUs PAGE-------------*/
 
 
+/*--------------ORDER PAGE----------------*/
 
+.order-content {
+    padding: 30px 70px;
+}
 
+.order-movie-information {
+    background-color: #ede4d5;
+    padding: 30px;
+}
 
+.order-tickets {
+    margin: 15px 0;
+    background-color: #ede4d5;
+    padding: 30px;
+}
 
+.order {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: flex-start
+}
+
+.choose-seats-title {
+    width: 100%;
+}
+
+.order-summary-title {
+    width: 40%;
+}
+
+.section-name {
+    padding: 0 10px;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    background-color: #051929;
+    color: #ede4d5;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 36px;
+}
+
+.step-number {
+    width: 20%;
+    border-right: 1px solid #ede4d5;
+}
+
+.seats {
+    flex: 1;
+}
+
+.choose-seats-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 200px;
+}
+
+.summarize-order {
+    flex: 3;
+    margin-left: 20px;
+}
+
+.summarize-order-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin: 15px 0;
+}
