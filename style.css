@@ -74,13 +74,20 @@
     margin-top: 10px;
     background-color: #ede4d5;
     padding: 20px;
-
+    box-shadow: 0px 2px 9px #413726, 0px 0px 2px #413726;
 }
+
 
 .movie-previews img {
     width: 180px;
     height: 270px;
     border-radius: 15px;
+    transition: transform 0.2s ease 0.2s; /*transition so img will scale*/
+
+}
+
+.movie-previews img:hover {
+    transform: scale(1.4); /*rescale*/
 }
 
 .most-watched h1 {
@@ -346,7 +353,7 @@ form {
 
 /*--------------SIGN IN PAGE-------------*/
 .sign-in-box-container {
-    border: 10px  #ccc;
+    border: 10px #ccc;
     margin: 70px;
 }
 
@@ -359,6 +366,7 @@ form {
     line-height: 30px;
 
 }
+
 .sign-in-box label {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -366,6 +374,7 @@ form {
     color: #051929;
 
 }
+
 .sign-in-box input {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -374,6 +383,7 @@ form {
     border: none;
 
 }
+
 .sign-in-box h1 {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -382,7 +392,8 @@ form {
     color: #051929;
 
 }
-.sign-in-box button{
+
+.sign-in-box button {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 15px;
@@ -401,17 +412,18 @@ form {
     color: #051929;
 
 }
+
 /*--------------SIGN IN PAGE-------------*/
 
 /*--------------REGISTER PAGE-------------*/
-.register-container{
-    border: 10px  #ede4d5;
+.register-container {
+    border: 10px #ede4d5;
     margin: 70px;
 
 }
 
-.register-box{
-     background-color: #ede4d5;
+.register-box {
+    background-color: #ede4d5;
     padding: 20px;
     border-radius: 2px;
     max-width: 400px;
@@ -419,7 +431,7 @@ form {
     line-height: 40px;
 }
 
-.register-box label{
+.register-box label {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 17px;
@@ -438,7 +450,7 @@ form {
     border-radius: 5px;
     background-color: #051929;
     color: #f2f2f2;
-  border: none;
+    border: none;
     margin-left: 270px;
     padding: 4px 18px 4px 18px;
 }
@@ -463,7 +475,7 @@ form {
 
 /*--------------ContactUs PAGE-------------*/
 .contact-us-container {
-    border: 10px  #ede4d5;
+    border: 10px #ede4d5;
     margin: 70px;
 }
 
@@ -494,6 +506,7 @@ form {
     width: 230px;
 
 }
+
 .contact-us-box button {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -506,6 +519,7 @@ form {
     padding: 4px 18px 4px 18px;
 
 }
+
 .contact-us-box h1 {
     font-family: Calibri, sans-serif;
     font-weight: normal;
@@ -517,6 +531,7 @@ form {
 .contact-us textarea {
     border: none;
 }
+
 /*--------------ContactUs PAGE-------------*/
 
 
@@ -524,17 +539,31 @@ form {
 
 .order-content {
     padding: 30px 70px;
+
 }
 
 .order-movie-information {
     background-color: #ede4d5;
     padding: 30px;
+    font-family: Calibri, sans-serif;
 }
+
+.order-movie-information h1 {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
 
 .order-tickets {
     margin: 15px 0;
     background-color: #ede4d5;
     padding: 30px;
+    font-family: Calibri, sans-serif;
+    color: #051929;
 }
 
 .order {
@@ -545,11 +574,11 @@ form {
 }
 
 .choose-seats-title {
-    width: 100%;
+    width: 70%;
 }
 
 .order-summary-title {
-    width: 40%;
+    width: 25%;
 }
 
 .section-name {
@@ -580,8 +609,15 @@ form {
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 5px 10px;
     height: 200px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.number-of-seats input {
+    width: 20%;
 }
 
 .summarize-order {
@@ -595,4 +631,23 @@ form {
     flex-direction: column;
     padding: 15px 15px;
     margin: 15px 0;
+    height: 200px;
+}
+
+.clear-button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+}
+
+.pay-button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
 }

@@ -37,12 +37,17 @@
 
 <div class="order-content">
     <div class="order-movie-information">
-        <p>Movie Summary</p>
+        <h1>Order Summary</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi at delectus distinctio doloremque
+            eius esse, et expedita facere fugit harum laborum magnam, molestiae necessitatibus nesciunt odio omnis
+            perferendis provident qui quibusdam quis quos ratione, recusandae rem soluta tempora voluptatem. Aliquid
+            esse illo ipsum, iste laboriosam rem sunt suscipit.</p>
     </div>
     <div class="order-tickets">
         <h1>Order Tickets:</h1>
         <div class="order">
             <div class="seats">
+
                 <div class="choose-seats-title">
                     <div class="section-title">
                         <div class="step-number">
@@ -53,20 +58,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="choose-seats-section">
-                    <div>
-                        <label>Row:</label>
-                        <input type="number">
+                <form id="choose-seats-form">
+                    <div class="choose-seats-section">
+                        <div>
+                            <label for="row">Row:</label>
+                            <input type="number" id="row" name="row" min="1" max="10">
+                        </div>
+                        <div class="number-of-seats">
+                            <label for="seats">Number Of Seats:</label>
+                            <input type="number" id="seats" name="seats" min="1" max="10">
+                        </div>
+                        <div class="add-seats-button">
+                            <button type="submit">Add</button>
+                        </div>
                     </div>
-                    <div>
-                        <label>Number Of Seats:</label>
-                        <input type="number">
-                    </div>
-                    <div class="add-seats-button">
-                        <button type="submit">Add</button>
-                    </div>
-                </div>
-
+                    <button class="clear-button">Clear</button>
+                </form>
             </div>
             <div class="summarize-order">
                 <div class="order-summary-title">
@@ -79,9 +86,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="summarize-order-section">
+                <div class="summarize-order-section" id="summarize-order-section">
 
                 </div>
+                <button class="pay-button">Pay</button>
 
             </div>
         </div>
