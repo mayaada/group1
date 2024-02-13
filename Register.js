@@ -1,49 +1,63 @@
-// Function to validate email format
-function validateEmail(email) {
-    // Regular expression for email format
-    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
+const registerBtn = document.querySelector('#my-form');
+const email = document.querySelector('#Email');
+const name = document.querySelector('#Name');
+const phone = document.querySelector('#Phone');
+const password = document.querySelector('#password');
+const gender = document.querySelector('#Gender');
+const birthday = document.querySelector('#Birthday');
 
-// Function to handle form submission
-function register() {
-    // Get form inputs
-    var email = document.getElementById('Email').value;
-    var name = document.getElementById('Name').value;
-    var password = document.getElementById('password').value;
-    var gender = document.getElementById('Gender').value;
-    var birthday = document.getElementById('Birthday').value;
+registerBtn.addEventListener('submit', onSubmit);
 
-    // Perform basic validation
-    if (!email || !name || !password || !gender || !birthday) {
-        alert("Please fill out all fields.");
+function onSubmit(event) {
+    event.preventDefault();
+
+    const emailValue = email.value.trim();
+    const nameValue = name.value.trim();
+    const passwordValue = password.value.trim();
+    const genderValue = gender.value;
+    const birthdayValue = birthday.value.trim();
+    const phoneValue = phone.value.trim(); // Define the phone field
+
+    if (emailValue === '' || nameValue === '' || passwordValue === '' || genderValue === '' || birthdayValue === '' || phoneValue === '') {
+        alert('Please fill in all fields');
         return;
     }
 
-    // Validate email format
-    if (!validateEmail(email)) {
-        alert("Please enter a valid email address.");
+    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    if (!emailRegex.test(emailValue)) {
+        alert('Please enter a valid email address');
+        email.focus();
         return;
     }
 
-    // Simulate sending data to a backend server
-    // Here, we'll just log the data to the console
-    console.log("Registering new user:");
-    console.log("Email: " + email);
-    console.log("Name: " + name);
-    console.log("Password: " + password);
-    console.log("Gender: " + gender);
-    console.log("Birthday: " + birthday);
+    const nameRegex = /^[a-zA-Z]+$/;
+    if (!nameRegex.test(nameValue)) {
+        alert('Please enter a name containing only letters');
+        name.focus();
+        return;
+    }
 
-    // Clear form fields after submission
-    document.getElementById('Email').value = '';
-    document.getElementById('Name').value = '';
-    document.getElementById('password').value = '';
-    document.getElementById('Gender').value = 'male'; // Reset gender to default
-    document.getElementById('Birthday').value = '';
+    if (passwordValue.length < 8) {
+        alert('Password must be at least 8 characters long');
+        password.focus();
+        return; // Halt further execution
+    }
 
-    // You can optionally redirect the user or show a success message here
+    const phoneRegex = /^0\d{9}$/;
+    if (!phoneRegex.test(phoneValue)) {
+        alert('Please enter a valid phone number starting with 0 and containing only numbers');
+        phone.focus();
+        return; // Halt further execution
+    }
+
+    window.userInfo = {
+        email: emailValue,
+        name: nameValue,
+        phone: phoneValue,
+        password: passwordValue,
+        gender: genderValue,
+        birthday: birthdayValue
+    };
+
+    alert('User information saved successfully!');
 }
-
-// Add event listener to the register button
-document.getElementById('registerBtn').addEventListener('click', register);

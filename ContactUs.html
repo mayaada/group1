@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="globalStyleSheet.css"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
@@ -36,44 +36,47 @@
 
 <div class="contact-us-container">
     <div class="contact-us-box">
-         <form>
-        <h1> Contact Us</h1> <hr>
-        <label for="Email">Email:</label>
-        <input type="text" id="Email" name="Email" required><br>
-       <label for="Name">Name:</label>
-        <input type="text" id="Name" name="Name" required> <br>
-        <label for="Phone">Phone:</label>
-      <input type="text" id="Phone" name="Phone" required> <br>
-      <label for="Content">Content:</label> <br>
-      <textarea id="Content" name="Content" rows="4" cols="50" required></textarea> <br>
-        <button id="sendBtn">Send</button>
-         </form>
+        <form id="my-form" class="block">
+            <h1> Contact Us</h1>
+            <hr>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required><br>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required> <br>
+            <label for="Phone">Phone:</label>
+            <input type="text" id="Phone" name="Phone" required> <br>
+            <label for="Content">Content:</label> <br>
+            <textarea id="Content" name="Content" rows="4" cols="50" required></textarea> <br>
+            <button id="sendBtn">Send</button>
+        </form>
     </div>
 
 </div>
 
 
+<footer>
+    <div class="contact-us">
+        <a target="_blank" href="/contact">Contact Us</a>
+    </div>
+    <div class="terms">
+        <a target="_blank" href="/terms">Terms & Privacy</a>
+    </div>
+    <div class="social-container">
+        <span>Follow Us:</span>
+        <a href="https://www.facebook.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png">
+        </a>
+        <a href="https://twitter.com/?lang=en">
+            <img src="https://www.veeforu.com/wp-content/uploads/2023/07/Twitter-new-cross-mark-Icon-PNG-X.jpg">
+        </a>
+    </div>
+</footer>
 
- <footer>
-            <div class="contact-us">
-                <a target="_blank" href="/contact">Contact Us</a>
-            </div>
-            <div class="terms">
-                <a target="_blank" href="/terms">Terms & Privacy</a>
-            </div>
-        <div class="social-container">
-            <span>Follow Us:</span>
-            <a href="https://www.facebook.com/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png">
-            </a>
-            <a href="https://www.instagram.com/">
-                <img src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png">
-            </a>
-            <a href="https://twitter.com/?lang=en">
-                <img src="https://www.veeforu.com/wp-content/uploads/2023/07/Twitter-new-cross-mark-Icon-PNG-X.jpg">
-            </a>
-        </div>
-    </footer>
+<script src="ContactUs.js"></script>
+
 
 </body>
 </html>
