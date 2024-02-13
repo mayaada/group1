@@ -1,33 +1,45 @@
-// Function to handle form submission
-function sendContactForm() {
-    // Get form inputs
-    var email = document.getElementById('Email').value;
-    var name = document.getElementById('Name').value;
-    var phone = document.getElementById('Phone').value;
-    var content = document.getElementById('Content').value;
+const form = document.querySelector('#my-form');
+const email = document.querySelector('#Email');
+const name = document.querySelector('#Name');
+const phone = document.querySelector('#Phone');
+const content = document.querySelector('#Content');
 
-    // Perform basic validation
-    if (!email || !name || !content) {
-        alert("Please fill out all required fields.");
+document.getElementById('sendBtn').addEventListener('click', onSubmit);
+
+function onSubmit(event) {
+
+    const emailValue = email.value.trim();
+    const nameValue = name.value.trim();
+    const phoneValue = phone.value.trim();
+    const contentValue = content.value.trim();
+
+    if (emailValue === '' || nameValue === '' || phoneValue === '' || contentValue === '') {
+        alert('Please fill out all required fields.');
         return;
     }
 
-    // Simulate sending data to a backend server
-    // Here, we'll just log the data to the console
-    console.log("Contact Form Submission:");
-    console.log("Email: " + email);
-    console.log("Name: " + name);
-    console.log("Phone: " + phone);
-    console.log("Content: " + content);
+    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    if (!emailRegex.test(emailValue)) {
+        alert('Please enter a valid email address');
+        email.focus();
+        return;
+    }
 
-    // Clear form fields after submission
-    document.getElementById('Email').value = '';
-    document.getElementById('Name').value = '';
-    document.getElementById('Phone').value = '';
-    document.getElementById('Content').value = '';
+    const phoneRegex = /^0\d{9}$/;
+    if (!phoneRegex.test(phoneValue)) {
+        alert('Please enter a valid phone number starting with 0');
+        phone.focus();
+        return;
+    }
 
-    // You can optionally redirect the user or show a success message here
+    const nameRegex = /^[a-zA-Z]+$/;
+    if (!nameRegex.test(nameValue)) {
+        alert('Please enter a name containing only letters');
+        name.focus();
+        return;
+    }
+    window.open('ThankYouPage.html');
+
+
 }
 
-// Add event listener to the send button
-document.getElementById('sendBtn').addEventListener('click', sendContactForm);
