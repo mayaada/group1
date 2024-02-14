@@ -13,12 +13,16 @@ function signUp(event) {
     if (!emailValue || !passwordValue) {
         alert("Please enter both email and password.");
         return;
-    }
-    window.userInfo = {
-        email : emailValue ,
-        password: passwordValue
-    };
-    window.open('advanced-movie-search.html' , window.userInfo);
+    } else {
+        const   user = {
+            email: emailValue
+        };
 
+        localStorage.setItem("user", JSON.stringify(user));
+
+        window.location.href= "home-page.html";
+
+    }
+    
 }
 
