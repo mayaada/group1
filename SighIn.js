@@ -14,11 +14,10 @@ function signUp(event) {
         alert("Please enter both email and password.");
         return;
     }
-    window.userInfo = {
-        email : emailValue ,
-        password: passwordValue
-    };
-    window.open('advanced-movie-search.html' , window.userInfo);
+
+    localStorage.setItem("user",emailValue)
+
+    window.open('home-page.html');
 
 }
 
