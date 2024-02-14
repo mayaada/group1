@@ -23,6 +23,6 @@ function signUp(event) {
         window.location.href= "home-page.html";
 
     }
-    
+
 }
 
