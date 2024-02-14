@@ -2,11 +2,11 @@
     font-family: Calibri, sans-serif;
 
 }
-
 .navbar {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 40px;
     width: 100%;
     align-items: center;
     background-color: #051929;
@@ -15,16 +15,21 @@
     height: 80px;
 }
 
+.right-side-content {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .sign-in {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-left: 750px;
+    justify-content: center; /* Remove unnecessary semicolon */
 }
 
 .user-icon img {
-    height: 20px;
+    height: 100%; /* Adjust to ensure consistent sizing */
     width: 20px;
     margin-right: 15px;
     background-color: #051929;
@@ -34,7 +39,6 @@
     padding-right: 10px;
     border-right: 1px solid #ede4d5;
     margin-right: 15px;
-
 }
 
 .register {
@@ -165,8 +169,15 @@ footer {
     width: 100%;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
     height: 80px;
+}
+
+.left-side-footer {
+    display: flex;
+    flex-direction: row;
+
 }
 
 footer a {
