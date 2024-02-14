@@ -13,16 +13,11 @@ function signUp(event) {
     if (!emailValue || !passwordValue) {
         alert("Please enter both email and password.");
         return;
-    } else {
-        const   user = {
-            email: emailValue
-        };
-
-        localStorage.setItem("user", JSON.stringify(user));
-
-        window.location.href= "home-page.html";
-
     }
+
+    localStorage.setItem("user",emailValue)
+
+    window.open('home-page.html');
 
 }
 

@@ -1,3 +1,19 @@
+//store user
+const user = localStorage.getItem("user");
+console.log(user);
+
+//check if user is signed in
+if (user !== null && user !== "") {
+    const signInSpan = document.getElementById("sign-in");
+    const registerDiv = document.getElementById("register-div");
+
+    signInSpan.textContent = user;
+    registerDiv.remove();
+
+} else {
+    window.location.href = "sign-in.html";
+}
+
 // Block out dates before the current date
 const today = new Date();
 const minDay = today.toISOString().split("T")[0];
