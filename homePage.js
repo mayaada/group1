@@ -1,3 +1,7 @@
+localStorage.getItem("user");
+
+
+
 // Block out dates before the current date
 const today = new Date();
 const minDay = today.toISOString().split("T")[0];
