@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize selection counter
     let selectionCount = 0;
 
-    document.getElementById("choose-seats-form").addEventListener("submit", function (event) {
+    document.getElementById("add-seats-button").addEventListener("submit", function (event) {
         event.preventDefault();
 
         const formData = new FormData(event.target);

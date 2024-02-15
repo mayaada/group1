@@ -361,7 +361,6 @@ form {
 }
 
 
-
 .screening-row {
     display: flex;
     flex-direction: row;
@@ -376,7 +375,7 @@ form {
     width: 100px;
     display: flex;
     justify-content: center;
-    flex:2;
+    flex: 2;
 }
 
 .order-button {
@@ -625,26 +624,71 @@ form {
     font-family: Calibri, sans-serif;
 }
 
+.order-movie-information-title {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+
+}
+
 .order-movie-information h1 {
     font-weight: bolder;
     font-size: 24px;
     color: #D13A00;
-    border-bottom: 3px solid #D89747;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
 }
+
+.order-movie-information-title p {
+    margin-left: 20px;
+    font-size: 2em;
+
+}
+
+.left-to-right {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.right-to-left {
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 .screening-summary {
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
+    border-top: 3px solid #D89747;
+
 }
 
-.screening-summary div{
+.screening-summary div {
     display: flex;
     flex-direction: column;
     padding: 5px 30px 0 30px;
 }
-.screening-summary div label{
+
+.screening-summary div label {
     color: #D13A00;
     margin-bottom: 10px;
     font-weight: bolder;

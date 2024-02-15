@@ -37,7 +37,15 @@
 
 <div class="order-content">
     <div class="order-movie-information">
-        <h1>Screening Summary</h1>
+        <div class="order-movie-information-title">
+            <div class="order-movie-information-title left-to-right">
+            <h1>Screening Summary</h1>
+            </div>
+            <div class="order-movie-information-title right-to-left">
+            <p><span>🍿🍿🍿</span></p>
+            </div>
+        </div>
+
         <div class="screening-summary">
             <div>
                 <label>Movie:</label>
@@ -73,7 +81,7 @@
                 </div>
                 <form id="choose-seats-form">
                     <div class="choose-seats-section">
-                        <div class="number-of-seats" >
+                        <div class="number-of-seats">
                             <label for="row">Row:</label>
                             <input type="number" id="row" name="row" min="1" max="10">
                         </div>
@@ -81,7 +89,7 @@
                             <label for="seats">Seat Number:</label>
                             <input type="number" id="seats" name="seats" min="1" max="10">
                         </div>
-                        <div class="add-seats-button">
+                        <div class="add-seats-button" id="add-seats-button">
                             <button type="submit">Add</button>
                         </div>
                     </div>
