@@ -2,10 +2,9 @@ const form = document.querySelector('#my-form');
 const emailInput = document.querySelector('#Email');
 const passwordInput = document.querySelector('#password');
 
-document.getElementById('signUpBtn').addEventListener('click', signUp);
+form.addEventListener('submit', signUp);
 
 function signUp(event) {
-    event.preventDefault();
 
     const emailValue = emailInput.value.trim();
     const passwordValue = passwordInput.value.trim();
@@ -15,9 +14,7 @@ function signUp(event) {
         return;
     }
 
-    localStorage.setItem("user",emailValue)
-
-    window.open('home-page.html');
-
+    localStorage.setItem("user", emailValue)
+    const newWindow =window.open('home-page.html');
+    window.close();
 }
-

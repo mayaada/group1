@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="globalStyleSheet.css"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
 <div class="navbar">
     <div class="menu">
         <button>
@@ -34,41 +33,44 @@
     </div>
 </div>
 
+<div class="order-history">
+    <h2>Order History</h2>
+    <div class="order-history-row">
 
-<div class="register-container">
-    <div class="register-box">
-        <form id="my-form" class="block">
-            <h1> Create An Account</h1>
-            <hr>
-            <label for="Email">Email:</label>
-            <input type="text" id="Email" name="Email" required> <br>
-            <label for="Name">Name:</label>
-            <input type="text" id="Name" name="Name" required> <br>
-            <label for="Phone">Phone:</label>
-            <input type="text" id="Phone" name="Phone" required> <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required> <br>
-            <label for="Gender">Gender:</label>
-            <select id="Gender" name="Gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select><br>
-            <label for="Birthday">Birthday:</label>
-            <input type="date" id="Birthday" name="Birthday" required>
-            <p>already have an account? Register<a href="sign-in.html"> here</a>.</p>
-
-            <div class="sign-in-button">
-                <input type="submit" value="Register">
-
-            </div>
-            <ul id="User"></ul>
-
-
-        </form>
+        <div class="order-date">
+            <h3>Date</h3>
+            <ul class="order-list">
+                <li>03/01/2023</li>
+                <li>12/02/2023</li>
+                <li>14/06/2023</li>
+                <li>12/07/2023</li>
+                <li>01/01/2024</li>
+                <li>12/02/2024</li>
+            </ul>
+        </div>
+        <div class="order-number">
+            <h3>Order Number</h3>
+            <ul class="order-list">
+                <li>4756</li>
+                <li>5657</li>
+                <li>5812</li>
+                <li>6134</li>
+                <li>6612</li>
+                <li>7123</li>
+            </ul>
+        </div>
+        <div class="order-amount">
+            <h3>Amount</h3>
+            <ul class="order-list">
+                <li>50 NIS</li>
+                <li>126 NIS</li>
+                <li>32 NIS</li>
+                <li>48 NIS</li>
+                <li>104 NIS</li>
+                <li>56 NIS</li>
+            </ul>
+        </div>
     </div>
-
-
 </div>
 
 
@@ -92,7 +94,7 @@
         </a>
     </div>
 </footer>
-<script src="Register.js"></script>
+<script src="myAccount.js"></script>
 
 </body>
 </html>

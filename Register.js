@@ -9,7 +9,6 @@ const birthday = document.querySelector('#Birthday');
 registerBtn.addEventListener('submit', onSubmit);
 
 function onSubmit(event) {
-    event.preventDefault();
 
     const emailValue = email.value.trim();
     const nameValue = name.value.trim();
@@ -50,14 +49,10 @@ function onSubmit(event) {
         return; // Halt further execution
     }
 
-    window.userInfo = {
-        email: emailValue,
-        name: nameValue,
-        phone: phoneValue,
-        password: passwordValue,
-        gender: genderValue,
-        birthday: birthdayValue
-    };
 
     alert('User information saved successfully!');
+    const newWindow = window.open('sign-in.html');
+    window.close();
+
+
 }

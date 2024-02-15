@@ -413,6 +413,26 @@ form {
 
 }
 
+.sign-in-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sign-in-button input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #051929;
+    color: #f2f2f2;
+    border: none;
+    margin-left: 270px;
+    padding: 4px 18px 4px 18px;
+    width: 100px
+
+}
+
 /*--------------SIGN IN PAGE-------------*/
 
 /*--------------REGISTER PAGE-------------*/
@@ -651,3 +671,82 @@ form {
     width: 100px;
     height: 30px;
 }
+
+
+/*-----------------My Account Page---------------------*/
+
+.order-history {
+    background-color: #ede4d5;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 400px ;
+}
+
+.order-history-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-history h2 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: #051929;
+    color: #ede4d5;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+
+.order-date {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+
+}
+
+.order-number {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+}
+
+.order-amount{
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+}
+
+.order-history h3 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #051929;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+li {
+    margin-bottom: 10px;
+}
+
+/*-----------------My Account Page---------------------*/
+
+
+
