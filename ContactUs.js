@@ -38,7 +38,8 @@ function onSubmit(event) {
         name.focus();
         return;
     }
-    window.open('ThankYouPage.html');
+    const newWindow = window.open('ThankYouPage.html');
+    window.close();
 
 
 }
