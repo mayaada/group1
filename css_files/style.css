@@ -41,12 +41,12 @@
     padding-right: 10px;
     border-right: 1px solid #ede4d5;
     margin-right: 15px;
-    text-decoration: underline ;
+    text-decoration: underline;
     color: #ede4d5;
 }
 
 
-.right-side-content a:hover{
+.right-side-content a:hover {
     color: #74BFB5;
 }
 
@@ -206,7 +206,7 @@ footer a {
     text-decoration: underline;
 }
 
-.contact-us a:hover{
+.contact-us a:hover {
     color: #74BFB5;
 }
 
@@ -217,7 +217,7 @@ footer a {
 
 }
 
-.terms a:hover{
+.terms a:hover {
     color: #74BFB5;
 }
 
@@ -324,7 +324,7 @@ form {
     padding-bottom: 5px;
 }
 
-.movie-image {
+.movie-image img {
     height: 250px;
     width: 180px;
     background-color: #051929;
@@ -341,9 +341,9 @@ form {
     border-left: 3px solid #D89747;
 }
 
-.general-info span {
-    flex: 1;
-}
+/*.general-info span {*/
+/*    flex: 1;*/
+/*}*/
 
 .movie-screenings {
     margin: 30px 0;
@@ -360,8 +360,12 @@ form {
     padding-bottom: 5px;
 }
 
+
+
 .screening-row {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 10px;
     margin-top: 15px;
     background-color: #ede4d5;
@@ -372,12 +376,13 @@ form {
     width: 100px;
     display: flex;
     justify-content: center;
+    flex:2;
 }
 
 .order-button {
     display: flex;
     justify-content: flex-end;
-    flex: 1;
+    flex: 6;
 }
 
 .order-button button {
@@ -613,6 +618,8 @@ form {
 }
 
 .order-movie-information {
+    display: flex;
+    flex-direction: column;
     background-color: #ede4d5;
     padding: 30px;
     font-family: Calibri, sans-serif;
@@ -627,6 +634,23 @@ form {
     margin-bottom: 10px;
 }
 
+.screening-summary {
+    display: flex;
+    flex-direction: row;
+}
+
+.screening-summary div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 30px 0 30px;
+}
+.screening-summary div label{
+    color: #D13A00;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
 
 .order-tickets {
     margin: 15px 0;
