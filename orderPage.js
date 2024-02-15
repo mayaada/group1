@@ -1,3 +1,9 @@
+// Function to convert number to words
+function numberToWords(number) {
+    const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+    return words[number] || number.toString();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize selection counter
     let selectionCount = 0;
@@ -25,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Text for each selection
         const seatsText = "Selected Seats: ";
         const rowText = "Selected Row: ";
-        const selectionNumberText = "Choice Number: ";
+        const selectionNumberText = "Choice Number ";
 
         // Set text content
         seatsSpan.textContent = seats;
         rowSpan.textContent = row;
-        selectionNumberSpan.textContent = selectionCount; // Set selection number
+        selectionNumberSpan.textContent = numberToWords(selectionCount); // Set selection number in words
         seatsLabel.textContent = seatsText;
         rowLabel.textContent = rowText;
 
