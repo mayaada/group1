@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="globalStyleSheet.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <script defer src="navbar.js"></script>
-    <script defer src="SighIn.js"></script>
+    <link rel="stylesheet" href="../css_files/globalStyleSheet.css"/>
+    <link rel="stylesheet" href="../css_files/style.css"/>
+    <script defer src="js%20files/navbar.js"></script>
+    <script defer src="js%20files/myAccount.js"></script>
+
 
 </head>
-
 <body>
-
 <div class="navbar">
     <div class="logo">
-        <img src="/Picture1.png">
+        <img src="/pictures/Picture1.png">
     </div>
     <div class="right-side-content" id="right-side-content">
         <div class="sign-in">
@@ -35,25 +34,44 @@
     </div>
 </div>
 
-<div class="sign-in-box-container">
-    <div class="sign-in-box">
-        <form id="my-form" class="block">
-            <h1> Sign In</h1>
-            <hr>
-            <label for="Email">Email:</label> <br>
-            <input type="text" id="Email" name="Email" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
-            <p>Don't have an account? Register<a href="Register.html"> here</a>.</p>
-            <div class="sign-in-button">
-                <input type="submit" value="Sign In">
+<div class="order-history">
+    <h2>Order History</h2>
+    <div class="order-history-row">
 
-            </div>
-
-
-        </form>
+        <div class="order-date">
+            <h3>Date</h3>
+            <ul class="order-list">
+                <li>03/01/2023</li>
+                <li>12/02/2023</li>
+                <li>14/06/2023</li>
+                <li>12/07/2023</li>
+                <li>01/01/2024</li>
+                <li>12/02/2024</li>
+            </ul>
+        </div>
+        <div class="order-number">
+            <h3>Order Number</h3>
+            <ul class="order-list">
+                <li>4756</li>
+                <li>5657</li>
+                <li>5812</li>
+                <li>6134</li>
+                <li>6612</li>
+                <li>7123</li>
+            </ul>
+        </div>
+        <div class="order-amount">
+            <h3>Amount</h3>
+            <ul class="order-list">
+                <li>50 NIS</li>
+                <li>126 NIS</li>
+                <li>32 NIS</li>
+                <li>48 NIS</li>
+                <li>104 NIS</li>
+                <li>56 NIS</li>
+            </ul>
+        </div>
     </div>
-
 </div>
 
 
@@ -80,7 +98,6 @@
         </a>
     </div>
 </footer>
-
 
 </body>
 </html>

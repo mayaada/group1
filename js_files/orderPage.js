@@ -4,11 +4,11 @@ function numberToWords(number) {
     return words[number] || number.toString();
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize selection counter
     let selectionCount = 0;
 
-    document.getElementById("choose-seats-form").addEventListener("submit", function(event) {
+    document.getElementById("choose-seats-form").addEventListener("submit", function (event) {
         event.preventDefault();
 
         const formData = new FormData(event.target);
@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const containerList = document.getElementById("summarize-order-section");
         const containerDiv = document.createElement("div");
+        containerDiv.classList.add("");
+
 
         const seatsSpan = document.createElement("span");
         const rowSpan = document.createElement("span");
