@@ -10,9 +10,32 @@ if (user !== null && user !== "") {
     signInSpan.textContent = user;
     registerDiv.remove();
 
+    //new logout button
+    const rightSideDiv = document.getElementById("right-side-content")
+    const logOut = document.createElement("button");
+    logOut.textContent = "Log Out";
+    logOut.classList.add("log-out-button");
+
+    // last child of right side div
+    const lastChild = rightSideDiv.lastElementChild;
+
+    rightSideDiv.insertBefore(logOut, lastChild);
+
+    logOut.addEventListener("click", function () {
+        // Clear user data from local storage
+        localStorage.removeItem("user");
+        // window.location.href = "sign-in.html";
+
+
+        signInSpan.textContent = "Sign In";
+        rightSideDiv.insertBefore(registerDiv, lastChild);
+        logOut.remove();
+    });
+
 } else {
     window.location.href = "sign-in.html";
 }
+
 
 // Block out dates before the current date
 const today = new Date();
