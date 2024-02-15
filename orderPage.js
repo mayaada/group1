@@ -1,33 +1,52 @@
-document.getElementById("choose-seats-form").addEventListener("submit", function (event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize selection counter
+    let selectionCount = 0;
 
-    const formData = new FormData(event.target);
-    const row = formData.get("row");
-    const seats = formData.get("seats");
+    document.getElementById("choose-seats-form").addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const containerList = document.getElementById("summarize-order-section");
-    const containerDiv = document.createElement("div");
+        const formData = new FormData(event.target);
+        const row = formData.get("row");
+        const seats = formData.get("seats");
 
-    const seatsSpan = document.createElement("span");
-    const rowSpan = document.createElement("span");
+        const containerList = document.getElementById("summarize-order-section");
+        const containerDiv = document.createElement("div");
 
-    const seatsLabel = document.createElement("label");
-    const rowLabel = document.createElement("label");
+        const seatsSpan = document.createElement("span");
+        const rowSpan = document.createElement("span");
+        const selectionNumberSpan = document.createElement("span"); // Span for selection number
 
-    seatsSpan.textContent = seats;
-    rowSpan.textContent = row;
-    seatsLabel.textContent = "Seats: ";
-    rowLabel.textContent = "Row: ";
+        const seatsLabel = document.createElement("label");
+        const rowLabel = document.createElement("label");
 
-    containerDiv.appendChild(seatsLabel);
-    containerDiv.appendChild(seatsSpan);
-    containerDiv.appendChild(document.createElement("br")); // Add line break for better separation
-    containerDiv.appendChild(rowLabel);
-    containerDiv.appendChild(rowSpan);
+        // Increment selection counter
+        selectionCount++;
 
-// Append the container div to the document body (or any other desired parent element)
-    containerList.appendChild(containerDiv);
+        // Text for each selection
+        const seatsText = "Selected Seats: ";
+        const rowText = "Selected Row: ";
+        const selectionNumberText = "Choice Number: ";
 
+        // Set text content
+        seatsSpan.textContent = seats;
+        rowSpan.textContent = row;
+        selectionNumberSpan.textContent = selectionCount; // Set selection number
+        seatsLabel.textContent = seatsText;
+        rowLabel.textContent = rowText;
 
+        // Add class to "Choice Number" span
+        selectionNumberSpan.classList.add('choice-number');
+
+        containerDiv.appendChild(document.createTextNode(selectionNumberText)); // Append "Choice Number" text
+        containerDiv.appendChild(selectionNumberSpan); // Append selection number
+        containerDiv.appendChild(document.createElement("br")); // Add line breaks for better separation
+        containerDiv.appendChild(seatsLabel);
+        containerDiv.appendChild(seatsSpan);
+        containerDiv.appendChild(document.createElement("br")); // Add line breaks for better separation
+        containerDiv.appendChild(rowLabel);
+        containerDiv.appendChild(rowSpan);
+
+        // Append the container div to the document body (or any other desired parent element)
+        containerList.appendChild(containerDiv);
+    });
 });
-
