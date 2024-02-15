@@ -383,6 +383,9 @@ form {
     border: 10px #ccc;
     margin: 70px;
     height: calc(100% - 160px - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sign-in-box {
