@@ -664,7 +664,13 @@ form {
     padding: 5px 10px;
     height: 200px;
     margin: 15px 0;
-    text-align: center;
+}
+
+.choose-seats-section label {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-right: 1px;
 }
 
 .number-of-seats input {
@@ -702,6 +708,33 @@ form {
     width: 100px;
     height: 30px;
 }
+
+.add-seats-button button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 50px;
+    height: 30px;
+    border: none;
+}
+
+
+.choice-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+.choice-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+    margin-right: 5px; /* Add a small margin to separate it from the number */
+}
+
+/*--------------ORDER PAGE----------------*/
 
 
 /*-----------------My Account Page---------------------*/
