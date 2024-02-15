@@ -20,7 +20,7 @@
 .right-side-content {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
 }
 
 .sign-in {
@@ -37,17 +37,19 @@
     background-color: #051929;
 }
 
-.sign-in span {
+.right-side-content a {
     padding-right: 10px;
     border-right: 1px solid #ede4d5;
     margin-right: 15px;
+    text-decoration: underline ;
+    color: #ede4d5;
 }
 
-.register {
-    padding-right: 10px;
-    border-right: 1px solid #ede4d5;
-    margin-right: 15px;
+
+.right-side-content a:hover{
+    color: #74BFB5;
 }
+
 
 .log-out-button {
     padding: 0 10px;
@@ -204,12 +206,21 @@ footer a {
     text-decoration: underline;
 }
 
+.contact-us a:hover{
+    color: #74BFB5;
+}
+
 .terms {
     padding: 10px;
     border-left: 1px solid #ede4d5;
     text-decoration: underline;
 
 }
+
+.terms a:hover{
+    color: #74BFB5;
+}
+
 
 .social-container {
     padding: 10px;
@@ -470,6 +481,10 @@ form {
 .register-container {
     border: 10px #ede4d5;
     margin: 70px;
+    height: calc(100% - 160px - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -528,6 +543,10 @@ form {
 .contact-us-container {
     border: 10px #ede4d5;
     margin: 70px;
+    height: calc(100% - 160px - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-us-box {
@@ -710,13 +729,17 @@ form {
     background-color: #ede4d5;
     display: flex;
     flex-direction: column;
-    padding: 100px 400px ;
+    padding: 100px 400px;
+    height: calc(100% - 160px);
+    justify-content: center;
+    align-items: center;
 }
 
 .order-history-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 400px;
 }
 
 .order-history h2 {
@@ -728,6 +751,7 @@ form {
     color: #ede4d5;
     padding: 10px;
     text-align: center;
+    width: 400px;
 
 
 }
@@ -752,7 +776,7 @@ form {
 
 }
 
-.order-amount{
+.order-amount {
     display: flex;
     flex-direction: column;
     font-family: Calibri, sans-serif;
@@ -770,7 +794,6 @@ form {
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-
 
 
 li {

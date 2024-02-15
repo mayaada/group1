@@ -4,33 +4,33 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="globalStyleSheet.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <script defer src="navbar.js"></script>
+    <script defer src="ContactUs.js"></script>
+
 </head>
 <body>
 
 <div class="navbar">
-    <div class="menu">
-        <button>
-            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </button>
-    </div>
     <div class="logo">
         <img src="/Picture1.png">
     </div>
-    <div class="sign-in">
-        <div class="user-icon">
-            <img src="https://riversideartsmarket.org/wp-content/uploads/2018/10/profile.png">
+    <div class="right-side-content" id="right-side-content">
+        <div class="sign-in">
+            <div class="user-icon">
+                <img src="https://riversideartsmarket.org/wp-content/uploads/2018/10/profile.png">
+            </div>
+            <a href="sign-in.html" id="sign-in">Sign In</a>
         </div>
-        <span>Sign In</span>
-    </div>
-    <div class="register">
-        <span>Register</span>
-    </div>
-    <div>
-        <input class="search" type="text" placeholder="Search"></input>
+        <div class="navbar-register-container" id="register-container">
+            <a href="Register.html" id="register">Register</a>
+        </div>
+        <div>
+            <label>
+                <input class="search" type="text" placeholder="Search">
+            </label>
+        </div>
+
+
     </div>
 </div>
 
@@ -55,12 +55,15 @@
 
 
 <footer>
-    <div class="contact-us">
-        <a target="_blank" href="/contact">Contact Us</a>
+    <div class="left-side-footer">
+        <div class="contact-us">
+            <a target="_blank" href="ContactUs.html">Contact Us</a>
+        </div>
+        <div class="terms">
+            <a target="_blank" href="/terms">Terms & Privacy</a>
+        </div>
     </div>
-    <div class="terms">
-        <a target="_blank" href="/terms">Terms & Privacy</a>
-    </div>
+
     <div class="social-container">
         <span>Follow Us:</span>
         <a href="https://www.facebook.com/">
@@ -74,8 +77,6 @@
         </a>
     </div>
 </footer>
-
-<script src="ContactUs.js"></script>
 
 
 </body>
