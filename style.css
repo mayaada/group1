@@ -87,7 +87,7 @@
     margin-top: 10px;
     background-color: #ede4d5;
     padding: 20px;
-    box-shadow: 0px 2px 9px #413726, 0px 0px 2px #413726;
+    /*box-shadow: 0px 2px 9px #413726, 0px 0px 2px #413726;*/
 }
 
 
@@ -106,20 +106,20 @@
 .most-watched h1 {
     font-family: Calibri, sans-serif;
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 26px;
     color: #D13A00;
     border-bottom: 3px solid #D89747;
     padding-bottom: 5px;
 }
 
 .find-a-movie {
-    padding: 30px 40px;
+    padding: 10px 40px;
 }
 
 .find-a-movie h1 {
     font-family: Calibri, sans-serif;
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 26px;
     color: #D13A00;
     border-bottom: 3px solid #D89747;
     padding-bottom: 5px;
@@ -128,7 +128,7 @@
 .search-form {
     font-family: Calibri, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     color: #051929;
     background-color: #ede4d5;
 
@@ -382,6 +382,7 @@ form {
 .sign-in-box-container {
     border: 10px #ccc;
     margin: 70px;
+    height: calc(100% - 160px - 140px);
 }
 
 .sign-in-box {
