@@ -29,6 +29,7 @@ if (user !== null && user !== "") {
 
 
         signInSelector.textContent = "Sign In";
+        signInSelector.setAttribute('href', 'sign-in.html')
         rightSideDiv.insertBefore(registerContainer, lastChild);
 
         logOut.remove();
