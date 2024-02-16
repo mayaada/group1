@@ -97,12 +97,17 @@
     width: 180px;
     height: 270px;
     border-radius: 15px;
-    transition: transform 0.2s ease 0.2s; /*transition so img will scale*/
+
 
 }
 
-.movie-previews img:hover {
-    transform: scale(1.4); /*rescale*/
+
+.movie-previews div {
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-previews div:hover {
+    transform: scale(1.4);
 }
 
 .most-watched h1 {
@@ -899,6 +904,8 @@ form {
 
 li {
     margin-bottom: 10px;
+}
+
 }
 
 /*-----------------My Account Page---------------------*/

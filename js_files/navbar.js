@@ -8,6 +8,7 @@ if (user !== null && user !== "") {
     const registerContainer = document.getElementById("register-container");
 
     signInSelector.textContent = user;
+    signInSelector.setAttribute('href', 'my-account.html')
     registerContainer.remove();
 
     //new logout button
@@ -37,3 +38,4 @@ if (user !== null && user !== "") {
     // window.location.href = "sign-in.html";
 }
 
+//
