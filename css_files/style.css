@@ -713,7 +713,8 @@ form {
     display: flex;
     flex-direction: row;
     padding: 15px;
-    align-items: flex-start
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .choose-seats-title {
@@ -770,8 +771,8 @@ form {
 }
 
 .summarize-order {
-    flex: 3;
-    margin-left: 20px;
+    flex: 2;
+    margin: 0 10px;
 }
 
 .summarize-order-section {
@@ -781,6 +782,19 @@ form {
     padding: 15px 15px;
     margin: 15px 0;
     height: 200px;
+    width: 450px;
+}
+
+.payment-order {
+    flex: 1;
+}
+.payment-order-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    height: 200px;
+    width: 330px;
 }
 
 .clear-button {
@@ -815,16 +829,23 @@ form {
 .choice-number {
     font-size: 16px;
     font-weight: bold;
-    color: #333;
-    margin-right: 5px;
+    color: #333; /* Dark gray color */
+    margin: 0 5px; /* Add a small margin to separate it from the number */
 }
 
-.choice-number {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333; /* Dark gray color */
-    margin-right: 5px; /* Add a small margin to separate it from the number */
+.selected {
+    margin: 0 5px;
 }
+
+.user-choice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+}
+
 
 /*--------------ORDER PAGE----------------*/
 
@@ -906,7 +927,7 @@ li {
     margin-bottom: 10px;
 }
 
-}
+
 
 /*-----------------My Account Page---------------------*/
 
