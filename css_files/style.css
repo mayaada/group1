@@ -241,6 +241,12 @@ footer a {
     margin-left: 15px;
 }
 
+
+#x-logo{
+    background-color: black;
+    border-radius: 10px;
+}
+
 /* ------------------FOOTER---------------------*/
 
 
@@ -902,11 +908,6 @@ form {
 }
 
 
-li {
-    margin-bottom: 10px;
-}
-
-}
 
 /*-----------------My Account Page---------------------*/
 
