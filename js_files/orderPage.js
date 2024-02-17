@@ -7,17 +7,32 @@ function numberToWords(number) {
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize selection counter
     let selectionCount = 0;
+    const maxSeatsAllowed = 7;
+    const selectedSeats = [];
 
-    document.getElementById("add-seats-button").addEventListener("submit", function (event) {
+
+    document.getElementById("choose-seats-form").addEventListener("submit", function (event) {
         event.preventDefault();
 
         const formData = new FormData(event.target);
         const row = formData.get("row");
-        const seats = formData.get("seats");
+        const seat = formData.get("seats");
+
+        const selectionIdentifier = row + "-" + seat;
+        if (selectedSeats.includes(selectionIdentifier)) {
+            alert("You have already selected this seat.");
+            return;
+        }
+
+
+        if (selectionCount >= maxSeatsAllowed) {
+            alert("You have already selected the maximum number of seats.");
+            return;
+        }
 
         const containerList = document.getElementById("summarize-order-section");
         const containerDiv = document.createElement("div");
-        containerDiv.classList.add("");
+        containerDiv.classList.add("user-choice");
 
 
         const seatsSpan = document.createElement("span");
@@ -36,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectionNumberText = "Choice Number ";
 
         // Set text content
-        seatsSpan.textContent = seats;
+        seatsSpan.textContent = seat;
         rowSpan.textContent = row;
         selectionNumberSpan.textContent = numberToWords(selectionCount); // Set selection number in words
         seatsLabel.textContent = seatsText;
@@ -44,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add class to "Choice Number" span
         selectionNumberSpan.classList.add('choice-number');
+        seatsSpan.classList.add('selected');
+        rowSpan.classList.add('selected');
 
         containerDiv.appendChild(document.createTextNode(selectionNumberText)); // Append "Choice Number" text
         containerDiv.appendChild(selectionNumberSpan); // Append selection number
@@ -56,5 +73,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Append the container div to the document body (or any other desired parent element)
         containerList.appendChild(containerDiv);
+        selectedSeats.push(selectionIdentifier);
+
     });
+
+    document.querySelector(".pay-button").addEventListener("click", function () {
+        const totalAmount = selectedSeats.length * 50; // Each card costs 50 NIS
+        const orderNumber = Math.floor(Math.random() * 1000000); // Generate a random order number
+
+        const paymentOrderSection = document.getElementById("payment-order-section");
+        paymentOrderSection.innerHTML = "<p>Total Amount to Pay: " + totalAmount + " NIS</p><p>Order Number: " + orderNumber + "</p>";
+    });
+
 });
