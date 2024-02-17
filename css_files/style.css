@@ -845,7 +845,15 @@ form {
 
 
 }
+.payment-order-section p {
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px;
 
+
+
+
+}
 
 /*--------------ORDER PAGE----------------*/
 
