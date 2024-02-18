@@ -3,7 +3,6 @@ function getQueryParams() {
     const urlParams = new URLSearchParams(queryString);
     const params = {};
 
-    // Iterate over each query parameter and store in params object
     for (const [key, value] of urlParams.entries()) {
         params[key] = value;
     }

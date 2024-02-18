@@ -35,8 +35,4 @@ if (user !== null && user !== "") {
         logOut.remove();
     });
 
-} else {
-    // window.location.href = "sign-in.html";
 }
-
-//

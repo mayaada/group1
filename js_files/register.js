@@ -15,7 +15,7 @@ function onSubmit(event) {
     const passwordValue = password.value.trim();
     const genderValue = gender.value;
     const birthdayValue = birthday.value.trim();
-    const phoneValue = phone.value.trim(); // Define the phone field
+    const phoneValue = phone.value.trim();
 
     if (emailValue === '' || nameValue === '' || passwordValue === '' || genderValue === '' || birthdayValue === '' || phoneValue === '') {
         alert('Please fill in all fields');
@@ -39,14 +39,14 @@ function onSubmit(event) {
     if (passwordValue.length < 8) {
         alert('Password must be at least 8 characters long');
         password.focus();
-        return; // Halt further execution
+        return;
     }
 
     const phoneRegex = /^0\d{9}$/;
     if (!phoneRegex.test(phoneValue)) {
         alert('Please enter a valid phone number starting with 0 and containing only numbers');
         phone.focus();
-        return; // Halt further execution
+        return;
     }
 
 

@@ -1,4 +1,3 @@
-// Function to convert number to words
 function numberToWords(number) {
     const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
     return words[number] || number.toString();
@@ -37,27 +36,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const seatsSpan = document.createElement("span");
         const rowSpan = document.createElement("span");
-        const selectionNumberSpan = document.createElement("span"); // Span for selection number
+        const selectionNumberSpan = document.createElement("span");
 
         const seatsLabel = document.createElement("label");
         const rowLabel = document.createElement("label");
 
-        // Increment selection counter
         selectionCount++;
 
-        // Text for each selection
         const seatsText = "Selected Seats: ";
         const rowText = "Selected Row: ";
         const selectionNumberText = "Choice Number ";
 
-        // Set text content
         seatsSpan.textContent = seat;
         rowSpan.textContent = row;
-        selectionNumberSpan.textContent = numberToWords(selectionCount); // Set selection number in words
+        selectionNumberSpan.textContent = numberToWords(selectionCount);
         seatsLabel.textContent = seatsText;
         rowLabel.textContent = rowText;
 
-        // Add class to "Choice Number" span
         selectionNumberSpan.classList.add('choice-number');
         seatsSpan.classList.add('selected');
         rowSpan.classList.add('selected');
@@ -65,24 +60,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const choiceNumber = document.createElement('span');
         choiceNumber.textContent = "Choice Number"
         choiceNumber.classList.add('choice-number-label');
-        containerDiv.appendChild(choiceNumber); // Append "Choice Number" text
-        containerDiv.appendChild(selectionNumberSpan); // Append selection number
-        containerDiv.appendChild(document.createElement("br")); // Add line breaks for better separation
+        containerDiv.appendChild(choiceNumber);
+        containerDiv.appendChild(selectionNumberSpan);
+        containerDiv.appendChild(document.createElement("br"));
         containerDiv.appendChild(seatsLabel);
         containerDiv.appendChild(seatsSpan);
-        containerDiv.appendChild(document.createElement("br")); // Add line breaks for better separation
+        containerDiv.appendChild(document.createElement("br"));
         containerDiv.appendChild(rowLabel);
         containerDiv.appendChild(rowSpan);
 
-        // Append the container div to the document body (or any other desired parent element)
         containerList.appendChild(containerDiv);
         selectedSeats.push(selectionIdentifier);
 
     });
 
     document.querySelector(".pay-button").addEventListener("click", function () {
-        const totalAmount = selectedSeats.length * 50; // Each card costs 50 NIS
-        const orderNumber = Math.floor(Math.random() * 1000000); // Generate a random order number
+        const totalAmount = selectedSeats.length * 50;
+        const orderNumber = Math.floor(Math.random() * 1000000);
 
         const paymentOrderSection = document.getElementById("payment-order-section");
         paymentOrderSection.innerHTML = "<p>Total Amount to Pay: " + totalAmount + " NIS</p><p>Order Number: " + orderNumber + "</p>";
