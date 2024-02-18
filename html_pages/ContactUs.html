@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css_files/globalStyleSheet.css"/>
     <link rel="stylesheet" href="../css_files/style.css"/>
-    <script defer src="js%20files/navbar.js"></script>
-    <script defer src="js%20files/ContactUs.js"></script>
+    <link rel="stylesheet" href="../css_files/contact-us.css"/>
+    <script defer src="../js_files/navbar.js"></script>
+    <script defer src="../js_files/ContactUs.js"></script>
 
 </head>
 <body>
@@ -14,7 +15,7 @@
     <div class="logo">
         <a href="home-page.html" id="home-page-link">
 
-            <img src="/pictures/Picture1.png">
+            <img src="../pictures/Picture1.png">
         </a>
 
     </div>
@@ -52,36 +53,38 @@
             <input type="text" id="Phone" name="Phone" required> <br>
             <label for="Content">Content:</label> <br>
             <textarea id="Content" name="Content" rows="4" cols="50" required></textarea> <br>
-            <button id="sendBtn">Send</button>
+            <div class="submit-button">
+                <input type="submit" value="Send">
+            </div>
         </form>
     </div>
 
 </div>
 
 
-    <footer>
-        <div class="left-side-footer">
-            <div class="contact-us">
-                <a target="_blank" href="ContactUs.html">Contact Us</a>
-            </div>
-            <div class="terms">
-                <a target="_blank" href="/terms">Terms & Privacy</a>
-            </div>
+<footer>
+    <div class="left-side-footer">
+        <div class="contact-us">
+            <a target="_blank" href="ContactUs.html">Contact Us</a>
         </div>
+        <div class="terms">
+            <a target="_blank" href="/terms">Terms & Privacy</a>
+        </div>
+    </div>
 
-        <div class="social-container">
-            <span>Follow Us:</span>
-            <a href="https://www.facebook.com/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png">
-            </a>
-            <a href="https://www.instagram.com/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
-            </a>
-            <a id="x" href="https://twitter.com/?lang=en">
-                <img id="x-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png">
-            </a>
-        </div>
-    </footer>
+    <div class="social-container">
+        <span>Follow Us:</span>
+        <a href="https://www.facebook.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+        </a>
+        <a id="x" href="https://twitter.com/?lang=en">
+            <img id="x-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png">
+        </a>
+    </div>
+</footer>
 
 
 </body>

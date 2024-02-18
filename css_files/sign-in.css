@@ -1,0 +1,89 @@
+
+
+/*--------------SIGN IN PAGE-------------*/
+.sign-in-box-container {
+    border: 10px #ccc;
+    margin: 70px;
+    height: calc(100% - 160px - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-box {
+    background-color: #ede4d5;
+    padding: 20px;
+    border-radius: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 30px;
+
+}
+
+.sign-in-box label {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    color: #051929;
+
+}
+
+.sign-in-box input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    padding-right: 150px;
+    border: none;
+
+}
+
+.sign-in-box h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #051929;
+
+}
+
+.sign-in-box button {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #051929;
+    color: #f2f2f2;
+    border: none;
+    margin-left: 270px;
+    padding: 4px 18px 4px 18px;
+}
+
+.sign-in-box p {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #051929;
+
+}
+
+.sign-in-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sign-in-button input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #74BFB5;
+    box-shadow: #051929;
+    color: white;
+    border: none;
+    padding: 4px 18px 4px 18px;
+    width: 100px
+
+}
+
+/*--------------SIGN IN PAGE-------------*/

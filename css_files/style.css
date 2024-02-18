@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px;
+    padding: 20px;
     width: 100%;
     align-items: center;
     background-color: #051929;
@@ -70,115 +70,6 @@
 
 /* ---------------NAVIGATION BAR-----------------*/
 
-/* -------------------HOME PAGE-----------------*/
-
-.home-page-content {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
-}
-
-.most-watched {
-    padding: 30px 40px;
-}
-
-.movie-previews {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    background-color: #ede4d5;
-    padding: 20px;
-    /*box-shadow: 0px 2px 9px #413726, 0px 0px 2px #413726;*/
-}
-
-
-.movie-previews img {
-    width: 180px;
-    height: 270px;
-    border-radius: 15px;
-
-
-}
-
-
-.movie-previews div {
-    transition: transform 0.3s ease-in-out;
-}
-
-.movie-previews div:hover {
-    transform: scale(1.4);
-}
-
-.most-watched h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: bolder;
-    font-size: 26px;
-    color: #D13A00;
-    border-bottom: 3px solid #D89747;
-    padding-bottom: 5px;
-}
-
-.find-a-movie {
-    padding: 10px 40px;
-}
-
-.find-a-movie h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: bolder;
-    font-size: 26px;
-    color: #D13A00;
-    border-bottom: 3px solid #D89747;
-    padding-bottom: 5px;
-}
-
-.search-form {
-    font-family: Calibri, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: #051929;
-    background-color: #ede4d5;
-
-}
-
-.input {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    padding: 20px;
-}
-
-.input-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.submit-button {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-}
-
-.submit-button button {
-    background-color: #74BFB5;
-    border-radius: 5px;
-    color: white;
-    font-weight: bolder;
-    width: 200px;
-    height: 30px;
-}
-
-.input label {
-    margin-bottom: 20px;
-}
-
-/* -------------------HOME PAGE-----------------*/
-
-
 /* ------------------FOOTER---------------------*/
 
 footer {
@@ -191,13 +82,15 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     height: 80px;
+
 }
 
 .left-side-footer {
     display: flex;
     flex-direction: row;
+    width: 60%;
 
 }
 
@@ -232,7 +125,6 @@ footer a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 880px;
 }
 
 .social-container img {
@@ -242,383 +134,12 @@ footer a {
 }
 
 
-#x-logo{
+#x-logo {
     background-color: black;
     border-radius: 10px;
 }
 
 /* ------------------FOOTER---------------------*/
-
-
-/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
-.advanced-search-content {
-    padding: 30px 40px;
-    height: calc(100% - 160px);
-}
-
-.advanced-search-content h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: bolder;
-    font-size: 32px;
-    color: #D13A00;
-    border-bottom: 3px solid #D89747;
-    padding-bottom: 5px;
-}
-
-.advanced-search-form {
-    font-family: Calibri, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #051929;
-    background-color: #ede4d5;
-    margin-top: 15px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 70px;
-}
-
-.advanced-search-content .input-block:not(:first-child) {
-    margin-left: 230px;
-}
-
-.advanced-search-form {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 90%;
-}
-
-form {
-    height: 100%;
-}
-
-/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
-
-.movie-screening-content {
-    margin: 20px 100px;
-}
-
-.movie-info {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    font-family: Calibri, sans-serif;
-    color: #051929;
-    flex: 1;
-    margin-top: 30px;
-}
-
-.movie-info-summary {
-    width: 80%;
-}
-
-.movie-summary {
-    display: flex;
-    flex-direction: column;
-    background-color: #ede4d5;
-    height: 250px;
-    width: 680px;
-    padding: 30px;
-    margin: 0 40px;
-
-}
-
-.movie-summary h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    color: #D13A00;
-    border-bottom: 3px solid #D89747;
-    padding-bottom: 5px;
-}
-
-.movie-image img {
-    height: 250px;
-    width: 180px;
-    background-color: #051929;
-    border-radius: 10px;
-}
-
-
-.general-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    height: 100%;
-    border-left: 3px solid #D89747;
-}
-
-/*.general-info span {*/
-/*    flex: 1;*/
-/*}*/
-
-.movie-screenings {
-    margin: 30px 0;
-    font-family: Calibri, sans-serif;
-    color: #051929;
-}
-
-.movie-screenings h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: bolder;
-    font-size: 26px;
-    color: #D13A00;
-    border-bottom: 3px solid #D89747;
-    padding-bottom: 5px;
-}
-
-
-.screening-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    margin-top: 15px;
-    background-color: #ede4d5;
-}
-
-.screening-row > div:not(:last-child) {
-    margin-right: 30px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    flex: 2;
-}
-
-.order-button {
-    display: flex;
-    justify-content: flex-end;
-    flex: 6;
-}
-
-.order-button button {
-    background-color: #74BFB5;
-    border-radius: 5px;
-    color: white;
-    font-weight: bolder;
-    width: 100px;
-    height: 30px;
-}
-
-/*--------------SIGN IN PAGE-------------*/
-.sign-in-box-container {
-    border: 10px #ccc;
-    margin: 70px;
-    height: calc(100% - 160px - 140px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sign-in-box {
-    background-color: #ede4d5;
-    padding: 20px;
-    border-radius: 2px;
-    max-width: 400px;
-    margin: 0 auto;
-    line-height: 30px;
-
-}
-
-.sign-in-box label {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 17px;
-    color: #051929;
-
-}
-
-.sign-in-box input {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 17px;
-    padding-right: 150px;
-    border: none;
-
-}
-
-.sign-in-box h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-    color: #051929;
-
-}
-
-.sign-in-box button {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 5px;
-    background-color: #051929;
-    color: #f2f2f2;
-    border: none;
-    margin-left: 270px;
-    padding: 4px 18px 4px 18px;
-}
-
-.sign-in-box p {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: #051929;
-
-}
-
-.sign-in-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.sign-in-button input {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 5px;
-    background-color: #051929;
-    color: #f2f2f2;
-    border: none;
-    margin-left: 270px;
-    padding: 4px 18px 4px 18px;
-    width: 100px
-
-}
-
-/*--------------SIGN IN PAGE-------------*/
-
-/*--------------REGISTER PAGE-------------*/
-.register-container {
-    border: 10px #ede4d5;
-    margin: 70px;
-    height: calc(100% - 160px - 140px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.register-box {
-    background-color: #ede4d5;
-    padding: 20px;
-    border-radius: 2px;
-    max-width: 400px;
-    margin: 0 auto;
-    line-height: 40px;
-}
-
-.register-box label {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 17px;
-    margin-right: 10px;
-    display: inline-block;
-    width: 70px;
-    color: #051929;
-
-
-}
-
-.register-box button {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 5px;
-    background-color: #051929;
-    color: #f2f2f2;
-    border: none;
-    margin-left: 270px;
-    padding: 4px 18px 4px 18px;
-}
-
-.register-box input {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 17px;
-    border: none;
-    width: 230px;
-}
-
-.register-box h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-    color: #051929;
-}
-
-/*--------------REGISTER PAGE-------------*/
-
-/*--------------ContactUs PAGE-------------*/
-.contact-us-container {
-    border: 10px #ede4d5;
-    margin: 70px;
-    height: calc(100% - 160px - 140px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-us-box {
-    background-color: #ede4d5;
-    padding: 20px;
-    border-radius: 2px;
-    max-width: 400px;
-    margin: 0 auto;
-    line-height: 30px;
-}
-
-.contact-us-box label {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 17px;
-    display: inline-block;
-    width: 80px;
-    color: #051929;
-
-}
-
-.contact-us-box input {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 17px;
-    border: none;
-    width: 230px;
-
-}
-
-.contact-us-box button {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 5px;
-    background-color: #051929;
-    color: #f2f2f2;
-    border: none;
-    margin-left: 270px;
-    padding: 4px 18px 4px 18px;
-
-}
-
-.contact-us-box h1 {
-    font-family: Calibri, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-    color: #051929;
-}
-
-.contact-us textarea {
-    border: none;
-}
-
-/*--------------ContactUs PAGE-------------*/
-
 
 /*--------------ORDER PAGE----------------*/
 
@@ -724,11 +245,11 @@ form {
 }
 
 .choose-seats-title {
-    width: 70%;
+    width: 90%;
 }
 
 .order-summary-title {
-    width: 25%;
+    width: 50%;
 }
 
 .section-name {
@@ -788,19 +309,22 @@ form {
     padding: 15px 15px;
     margin: 15px 0;
     height: 200px;
-    width: 450px;
 }
 
 .payment-order {
     flex: 1;
 }
-.payment-order-section{
+
+.order-payment-title {
+    width: 80%;
+}
+
+.payment-order-section {
     background-color: white;
     display: flex;
     flex-direction: column;
     margin: 15px 0;
     height: 200px;
-    width: 330px;
 }
 
 .clear-button {
@@ -835,11 +359,18 @@ form {
 .choice-number {
     font-size: 16px;
     font-weight: bold;
-    color: #333; /* Dark gray color */
-    margin: 0 5px; /* Add a small margin to separate it from the number */
+    color: #051929;
+    margin: 0 5px;
 }
 
 .selected {
+    margin: 0 5px;
+}
+
+.user-choice text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #051929;
     margin: 0 5px;
 }
 
@@ -851,12 +382,11 @@ form {
 
 
 }
+
 .payment-order-section p {
     font-size: 15px;
     font-weight: bolder;
     margin: 10px;
-
-
 
 
 }
@@ -867,13 +397,19 @@ form {
 /*-----------------My Account Page---------------------*/
 
 .order-history {
-    background-color: #ede4d5;
     display: flex;
     flex-direction: column;
-    padding: 100px 400px;
     height: calc(100% - 160px);
     justify-content: center;
     align-items: center;
+    padding: 100px 400px;
+
+}
+
+.order-history-content {
+    background-color: #ede4d5;
+    padding: 30px;
+
 }
 
 .order-history-row {
@@ -885,16 +421,14 @@ form {
 
 .order-history h2 {
     font-family: Calibri, sans-serif;
-    font-weight: normal;
     font-size: 20px;
+    font-weight: bolder;
     margin-bottom: 10px;
     background: #051929;
     color: #ede4d5;
     padding: 10px;
     text-align: center;
     width: 400px;
-
-
 }
 
 
@@ -904,7 +438,6 @@ form {
     font-family: Calibri, sans-serif;
     font-weight: normal;
     font-size: 17px;
-
 
 }
 
@@ -928,15 +461,17 @@ form {
 
 .order-history h3 {
     font-family: Calibri, sans-serif;
-    font-weight: normal;
     font-size: 20px;
-    color: #051929;
+    font-weight: bold;
+    color: #D13A00;
     border-bottom: 3px solid #D89747;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-
+.order-history-content li{
+    padding: 3px;
+}
 
 /*-----------------My Account Page---------------------*/
 

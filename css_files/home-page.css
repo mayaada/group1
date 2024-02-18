@@ -1,0 +1,123 @@
+
+/* -------------------HOME PAGE-----------------*/
+
+.home-page-content {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+}
+
+.most-watched {
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.movie-previews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    background-color: #ede4d5;
+    padding: 20px;
+}
+
+
+.movie-previews img {
+    width: 180px;
+    height: 270px;
+    border-radius: 15px;
+
+}
+
+.movie-previews div {
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-previews div:hover {
+    transform: scale(1.4);
+}
+
+.most-watched h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+}
+
+.find-a-movie {
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.find-a-movie h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+}
+
+#movieForm {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.search-form {
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #051929;
+    background-color: #ede4d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-top: 15px;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submit-button {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.submit-button button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 200px;
+    height: 30px;
+}
+
+.input label {
+    margin-bottom: 20px;
+}
+
+/* -------------------HOME PAGE-----------------*/
+

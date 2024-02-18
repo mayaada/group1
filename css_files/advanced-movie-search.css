@@ -1,0 +1,59 @@
+/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/
+.advanced-search-content {
+    padding: 30px 40px;
+    height: calc(100% - 160px);
+}
+
+.advanced-search-content h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+
+}
+
+.advanced-search-form {
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #051929;
+    background-color: #ede4d5;
+    margin-top: 15px;
+    height: calc(100% - 160px);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 70px;
+}
+
+.advanced-search-form-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+.input-block{
+    padding: 15px 0 ;
+    width: 100%;
+}
+
+#advanced-search-city select{
+    width: 100%;
+}
+
+.submit-button input {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 150px;
+    height: 30px;
+}
+/*--------------ADVANCED MOVIE SEARCH PAGE----------------*/

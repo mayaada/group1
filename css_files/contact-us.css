@@ -1,0 +1,85 @@
+
+/*--------------ContactUs PAGE-------------*/
+.contact-us-container {
+    border: 10px #ede4d5;
+    margin: 70px;
+    height: calc(100% - 160px - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-box {
+    background-color: #ede4d5;
+    padding: 20px;
+    border-radius: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.contact-us-box label {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    display: inline-block;
+    width: 80px;
+    color: #051929;
+
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.submit-button input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #74BFB5;
+    box-shadow: #051929;
+    color: white;
+    border: none;
+    padding: 4px 18px 4px 18px;
+    width: 50px;
+}
+
+.contact-us-box input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    border: none;
+    width: 230px;
+
+}
+
+.contact-us-box button {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #051929;
+    color: #f2f2f2;
+    border: none;
+    margin-left: 270px;
+    padding: 4px 18px 4px 18px;
+
+}
+
+.contact-us-box h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #051929;
+}
+
+.contact-us textarea {
+    border: none;
+}
+
+/*--------------ContactUs PAGE-------------*/
+

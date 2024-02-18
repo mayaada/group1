@@ -1,0 +1,91 @@
+
+/*--------------REGISTER PAGE-------------*/
+.register-container {
+    border: 10px #ede4d5;
+    margin: 70px;
+    height: calc(100% - 160px - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register-box {
+    background-color: #ede4d5;
+    padding: 20px;
+    border-radius: 2px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 40px;
+    flex: 1;
+}
+
+.register-box label {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 70px;
+    color: #051929;
+
+
+}
+
+.sign-in-button {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #f2f2f2;
+    border: none;
+    padding: 4px 18px 4px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.register-box input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    border: none;
+    width: 230px;
+}
+
+.register-box h1 {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #051929;
+}
+
+.movie-to-sign-in {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    color: #051929;
+    font-size: 14px;
+
+}
+
+.movie-to-sign-in a:hover {
+    color: #74BFB5;
+}
+
+.sign-in-button input {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #74BFB5;
+    box-shadow: #051929;
+    color: white;
+    border: none;
+    padding: 4px 18px 4px 18px;
+    width: 100px
+
+}
+
+/*--------------REGISTER PAGE-------------*/

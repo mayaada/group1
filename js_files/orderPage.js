@@ -62,7 +62,10 @@ document.addEventListener('DOMContentLoaded', function () {
         seatsSpan.classList.add('selected');
         rowSpan.classList.add('selected');
 
-        containerDiv.appendChild(document.createTextNode(selectionNumberText)); // Append "Choice Number" text
+        const choiceNumber = document.createElement('span');
+        choiceNumber.textContent = "Choice Number"
+        choiceNumber.classList.add('choice-number-label');
+        containerDiv.appendChild(choiceNumber); // Append "Choice Number" text
         containerDiv.appendChild(selectionNumberSpan); // Append selection number
         containerDiv.appendChild(document.createElement("br")); // Add line breaks for better separation
         containerDiv.appendChild(seatsLabel);
