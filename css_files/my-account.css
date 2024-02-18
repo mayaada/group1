@@ -1,0 +1,83 @@
+/*-----------------My Account Page---------------------*/
+
+.order-history {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 160px);
+    justify-content: center;
+    align-items: center;
+    padding: 100px 400px;
+
+}
+
+.order-history-content {
+    background-color: #ede4d5;
+    padding: 30px;
+
+}
+
+.order-history-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.order-history h2 {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    background: #051929;
+    color: #ede4d5;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+
+.order-date {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+}
+
+.order-number {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+}
+
+.order-amount {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+}
+
+.order-history h3 {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #D13A00;
+    border-bottom: 3px solid #D89747;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.order-history-content li{
+    padding: 3px;
+}
+
+/*-----------------My Account Page---------------------*/
+
+
+

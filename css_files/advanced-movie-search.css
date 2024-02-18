@@ -2,6 +2,8 @@
 .advanced-search-content {
     padding: 30px 40px;
     height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
 }
 
 .advanced-search-content h1 {
@@ -22,6 +24,17 @@
     background-color: #ede4d5;
     margin-top: 15px;
     height: calc(100% - 160px);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.advanced-search-form form{
+    margin-top: 15px;
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
 
 .column {
@@ -34,9 +47,12 @@
 .advanced-search-form-columns {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    padding: 20px 40px;
     height: 90%;
+    flex-grow: 1;
+
 }
 
 .input-block{

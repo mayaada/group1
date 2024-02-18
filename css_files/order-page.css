@@ -1,0 +1,254 @@
+
+/*--------------ORDER PAGE----------------*/
+
+.order-content {
+    padding: 30px 70px;
+    height: calc(100% - 160px);
+}
+
+.order-movie-information {
+    display: flex;
+    flex-direction: column;
+    background-color: #ede4d5;
+    padding: 30px;
+    font-family: Calibri, sans-serif;
+}
+
+.order-movie-information-title {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+
+}
+
+.order-movie-information h1 {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #D13A00;
+}
+
+.order-movie-information-title p {
+    margin-left: 20px;
+    font-size: 2em;
+
+}
+
+.left-to-right {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.right-to-left {
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.screening-summary {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    border-top: 3px solid #D89747;
+
+}
+
+.screening-summary div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 30px 0 30px;
+}
+
+.screening-summary div label {
+    color: #D13A00;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+
+.order-tickets {
+    margin: 15px 0;
+    background-color: #ede4d5;
+    padding: 30px;
+    font-family: Calibri, sans-serif;
+    color: #051929;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.choose-seats-title {
+    width: 90%;
+}
+
+.order-summary-title {
+    width: 50%;
+}
+
+.section-name {
+    padding: 0 10px;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    background-color: #051929;
+    color: #ede4d5;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 36px;
+}
+
+.step-number {
+    width: 20%;
+    border-right: 1px solid #ede4d5;
+}
+
+.seats {
+    flex: 1;
+}
+
+.choose-seats-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    height: 200px;
+    margin: 15px 0;
+}
+
+.choose-seats-section label {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-right: 1px;
+}
+
+.number-of-seats input {
+    width: 20%;
+}
+
+.summarize-order {
+    flex: 2;
+    margin: 0 10px;
+}
+
+.summarize-order-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin: 15px 0;
+    height: 200px;
+}
+
+.payment-order {
+    flex: 1;
+}
+
+.order-payment-title {
+    width: 80%;
+}
+
+.payment-order-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    height: 200px;
+}
+
+.clear-button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+}
+
+.pay-button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+}
+
+.add-seats-button button {
+    background-color: #74BFB5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 50px;
+    height: 30px;
+    border: none;
+}
+
+
+.choice-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #051929;
+    margin: 0 5px;
+}
+
+.selected {
+    margin: 0 5px;
+}
+
+.user-choice text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #051929;
+    margin: 0 5px;
+}
+
+.user-choice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+}
+
+.payment-order-section p {
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px;
+
+
+}
+
+/*--------------ORDER PAGE----------------*/
+
+
