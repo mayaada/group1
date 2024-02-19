@@ -30,7 +30,7 @@
     overflow-y: auto;
 }
 
-.advanced-search-form form{
+.advanced-search-form form {
     margin-top: 15px;
     height: calc(100% - 160px);
     display: flex;
@@ -57,12 +57,12 @@
 
 }
 
-.input-block{
-    padding: 15px 0 ;
+.input-block {
+    padding: 15px 0;
     width: 100%;
 }
 
-#advanced-search-city select{
+#advanced-search-city select {
     width: 100%;
 }
 
@@ -74,4 +74,5 @@
     width: 150px;
     height: 30px;
 }
+
 /*--------------ADVANCED MOVIE SEARCH PAGE----------------*/

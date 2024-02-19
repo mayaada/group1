@@ -1,4 +1,3 @@
-
 /* -------------------HOME PAGE-----------------*/
 
 .home-page-content {
@@ -71,6 +70,7 @@
     flex-direction: column;
     /*flex-grow: 1;*/
 }
+
 .search-form {
     font-family: Calibri, sans-serif;
     font-weight: bold;

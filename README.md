@@ -13,7 +13,7 @@ This is a movie screening website designed to provide users with information abo
   - Sign in/register links in the navbar.
   - User link in the navbar after signing in, leading to the user's account page.
   - Advanced movie search option in the navbar.
-  
+  - Navigate to home page through logo buttion. 
 - **Movie Search:**
   - Basic movie search on the home page.
   - Advanced movie search functionality.

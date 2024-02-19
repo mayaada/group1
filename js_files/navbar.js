@@ -1,13 +1,13 @@
 //store user
 const user = localStorage.getItem("user");
-console.log(user);
+const dbUserName = window.db.users.getName(user);
 
 //check if user is signed in
 if (user !== null && user !== "") {
     const signInSelector = document.getElementById("sign-in");
     const registerContainer = document.getElementById("register-container");
 
-    signInSelector.textContent = user;
+    signInSelector.textContent = dbUserName ?? user;
     signInSelector.setAttribute('href', 'my-account.html')
     registerContainer.remove();
 

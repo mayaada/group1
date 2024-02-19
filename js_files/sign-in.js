@@ -5,6 +5,7 @@ const passwordInput = document.querySelector('#password');
 form.addEventListener('submit', signUp);
 
 function signUp(event) {
+    event.preventDefault();
 
     const emailValue = emailInput.value.trim();
     const passwordValue = passwordInput.value.trim();
@@ -14,7 +15,13 @@ function signUp(event) {
         return;
     }
 
-    localStorage.setItem("user", emailValue)
-    const newWindow =window.open('home-page.html');
-    window.close();
+    const foundUser = window.db.users.get(emailValue, passwordValue);
+
+    if (!foundUser) {
+        alert("Username or password are incorrect, to create a new user go to the register page.");
+        return;
+    }
+
+    localStorage.setItem("user", emailValue);
+    window.location.href = 'home-page.html';
 }

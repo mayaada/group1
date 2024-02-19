@@ -4,9 +4,10 @@ const name = document.querySelector('#Name');
 const phone = document.querySelector('#Phone');
 const content = document.querySelector('#Content');
 
-document.getElementById('sendBtn').addEventListener('click', onSubmit);
+document.getElementById('my-form').addEventListener('submit', onSubmit);
 
 function onSubmit(event) {
+    event.preventDefault();
 
     const emailValue = email.value.trim();
     const nameValue = name.value.trim();
@@ -38,9 +39,7 @@ function onSubmit(event) {
         name.focus();
         return;
     }
-    const newWindow = window.open('ThankYouPage.html');
-    window.close();
 
-
+    window.location.href = "ThankYouPage.html"
 }
 

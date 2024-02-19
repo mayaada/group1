@@ -9,6 +9,7 @@ const birthday = document.querySelector('#Birthday');
 registerBtn.addEventListener('submit', onSubmit);
 
 function onSubmit(event) {
+    event.preventDefault();
 
     const emailValue = email.value.trim();
     const nameValue = name.value.trim();
@@ -51,8 +52,17 @@ function onSubmit(event) {
 
 
     alert('User information saved successfully!');
-    const newWindow = window.open('sign-in.html');
-    window.close();
 
+    window.db.users.addUser({
+        email: emailValue,
+        name: nameValue,
+        password: passwordValue,
+        gender: genderValue,
+        birthday: birthdayValue,
+        phone: phoneValue,
+    });
 
+    localStorage.setItem("user", emailValue);
+
+    window.location.href = 'home-page.html';
 }
