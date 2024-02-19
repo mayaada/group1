@@ -45,6 +45,9 @@ This is a movie screening website designed to provide users with information abo
 1. Clone this repository to your local machine.
 2. Open the `home-page.html` file in your web browser to access the home page.
 3. Navigate through the website using the provided links in the navbar and footer.
+4. Use the following user to sign in, or register a new one: 
+   5. email: admin@gmail.com,
+                                                                password: 12345678
 
 ## Contributors
  - Maya Adar
