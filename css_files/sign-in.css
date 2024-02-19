@@ -2,12 +2,11 @@
 
 /*--------------SIGN IN PAGE-------------*/
 .sign-in-box-container {
-    border: 10px #ccc;
-    margin: 70px;
-    height: calc(100% - 160px - 140px);
+    height: calc(100% - 160px);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .sign-in-box {
@@ -15,9 +14,9 @@
     padding: 20px;
     border-radius: 2px;
     max-width: 400px;
-    margin: 0 auto;
     line-height: 30px;
-
+    overflow-y: auto;
+    max-height: 100%
 }
 
 .sign-in-box label {

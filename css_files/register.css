@@ -1,12 +1,11 @@
-
 /*--------------REGISTER PAGE-------------*/
 .register-container {
-    border: 10px #ede4d5;
-    margin: 70px;
-    height: calc(100% - 160px - 140px);
+    /*margin: 70px;*/
+    height: calc(100% - 160px);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -14,11 +13,10 @@
     background-color: #ede4d5;
     padding: 20px;
     border-radius: 2px;
-    width: 80%;
     max-width: 400px;
-    margin: 0 auto;
     line-height: 40px;
-    flex: 1;
+    overflow-y: auto;
+    max-height: 100%
 }
 
 .register-box label {

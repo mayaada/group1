@@ -4,6 +4,7 @@
 .order-content {
     padding: 30px 70px;
     height: calc(100% - 160px);
+    overflow-y: auto ;
 }
 
 .order-movie-information {

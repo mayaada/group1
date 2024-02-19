@@ -3,7 +3,7 @@
 
 This is a movie screening website designed to provide users with information about movies screening in various cities and theaters. The website allows users to browse popular movies, search for movies, sign in/register, view their account details, search for movie screenings, order tickets, and contact the website administrators.
 
-## Features
+## Pages:
 
 - **Home Page:**
   - Display popular movies.

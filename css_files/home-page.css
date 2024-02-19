@@ -5,9 +5,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: white;
-    height: calc(100% - 160px);
     display: flex;
     flex-direction: column;
+    height: calc(100% - 160px);
+    overflow-y: auto;
 }
 
 .most-watched {
@@ -53,7 +54,7 @@
     padding: 10px 40px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 
 .find-a-movie h1 {
@@ -68,7 +69,7 @@
 #movieForm {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 .search-form {
     font-family: Calibri, sans-serif;
@@ -79,7 +80,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     margin-top: 15px;
 
 }

@@ -6,13 +6,14 @@
     height: calc(100% - 160px);
     justify-content: center;
     align-items: center;
-    padding: 100px 400px;
-
+    margin: 20px;
+    overflow-y: auto;
 }
 
 .order-history-content {
     background-color: #ede4d5;
     padding: 30px;
+
 
 }
 
@@ -21,6 +22,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 400px;
+
 }
 
 .order-history h2 {
@@ -73,7 +75,7 @@
     margin-bottom: 10px;
 }
 
-.order-history-content li{
+.order-history-content li {
     padding: 3px;
 }
 
